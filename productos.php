@@ -34,7 +34,7 @@
 
             </div>
             <!-- /.col-lg-3 -->
-            <!--
+            
             <div class="col-lg-9">
 
                 <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -62,7 +62,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div> -->
+                </div> 
 
                 <div class="row">
 
