@@ -3,6 +3,19 @@
     width: 35%;
 }
 
-.navbar-dark {
-    background: #575757 !important;
+
+/**Colores**/
+
+.fondo {
+    background-color: #a8a8a8;
+}
+
+.navbar-dark,
+.bg-dark {
+    background: #fffffe !important;
+}
+
+.textosImportantes,
+nav a {
+    color: #272343 !important;
 }
