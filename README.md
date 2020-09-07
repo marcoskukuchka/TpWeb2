@@ -11,3 +11,7 @@ Lopez Sosa Sebastian Gabriel.
 Montes de Oca Romina Desiree.
 
 Kukuchka Marcos Jeremias.
+
+### Paleta de colores:
+
+https://www.happyhues.co/palettes/14
