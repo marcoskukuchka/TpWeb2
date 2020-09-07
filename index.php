@@ -12,11 +12,11 @@
 
 <body class="fondo">
 
-    <!-- Navigation -->
+    <!-- Navegacion -->
     <?php
-    include("includes/nav.php");
+    include("includes/nav.html");
     ?>
-    <!-- Page Content -->
+    <!-- contenido pagina -->
     <div id="aside" class="container mt-5">
 
         <div class="row">
@@ -174,7 +174,7 @@
 
     <!-- Footer -->
    <?php
-    include("includes/footer.php")
+    include("includes/footer.html")
    ?>
 
 
