@@ -14,7 +14,7 @@
 
 <!-- Barra navegacion -->
     <?php
-    include("includes/nav.php")
+    include("includes/nav.html")
     ?>
 
 
@@ -462,7 +462,7 @@
 
 <!-- Footer -->
     <?php
-    include("includes/footer.php")
+    include("includes/footer.html")
     ?>
 </body>
 
