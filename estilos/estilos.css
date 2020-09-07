@@ -2,3 +2,7 @@
     height: 35%;
     width: 35%;
 }
+
+.navbar-dark {
+    background: #575757 !important;
+}
