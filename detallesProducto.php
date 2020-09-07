@@ -9,11 +9,35 @@
     <title>El Bardo Inmortal -Libreria-</title>
 </head>
 <body>
-<?php
-    include("includes/nav.php")
+ <?php
+    include("includes/nav.html")
    ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
      <?php
-    include("includes/footer.php")
+    include("includes/footer.html")
    ?>
-</body>
+ </body>
+
+ </html>
 </html> 

@@ -13,12 +13,32 @@
 
  <body>
  <?php
-    include("includes/nav.php")
+    include("includes/nav.html")
    ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
      <?php
-    include("includes/footer.php")
+    include("includes/footer.html")
    ?>
  </body>
 
