@@ -16,7 +16,7 @@
     <header>
 
         <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary fixed-top">
-            <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logoFAA"></a>
+            <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logo libreria"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,12 +68,17 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div> -->
-                <!-- fin carrusel -->
+            <!-- fin carrusel -->
 
-                <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center pt-5">
-                    <h1 class="pt-5">Titulo sitio</h1>
-                    <p>Slogan del sitio</p>
-                </div>
+            <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center pt-5">
+                <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+                <h1 class="pt-5">El Bardo Inmortal</h1>
+             
+                <blockquote class="blockquote">
+                    <p class="mb-0">"No existe nada bueno ni malo, es el pensamiento humano el que lo hace parecer así"</p>
+                    <footer class="blockquote-footer"> <cite title="Source Title"> William Shakespeare </cite></footer>
+                </blockquote>
+            </div>
         </section>
         <!-- fin identidad sitio -->
 
