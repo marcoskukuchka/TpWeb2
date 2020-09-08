@@ -15,8 +15,8 @@
     <!-- Navegacion -->
     <header>
 
-        <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary fixed-top ">
-            <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logoFAA"></a>
+        <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary fixed-top">
+            <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logo libreria"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,13 +40,13 @@
         </nav>
     </header>
     <!-- contenido pagina -->
-    <main>
+    <main class="fondo-portada">
 
         <!-- identidad sitio -->
-        <section class="container mt-5 ">
+        <section class="container">
 
             <!-- carrusel -->
-            <div class="row">
+            <!-- <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -67,13 +67,18 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
-                <!-- fin carrusel -->
+                </div> -->
+            <!-- fin carrusel -->
 
-                <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center">
-                    <h1>Titulo sitio</h1>
-                    <p>Slogan del sitio</p>
-                </div>
+            <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center pt-5">
+                <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+                <h1 class="pt-5">El Bardo Inmortal</h1>
+             
+                <blockquote class="blockquote">
+                    <p class="mb-0">"No existe nada bueno ni malo, es el pensamiento humano el que lo hace parecer así"</p>
+                    <footer class="blockquote-footer"> <cite title="Source Title"> William Shakespeare </cite></footer>
+                </blockquote>
+            </div>
         </section>
         <!-- fin identidad sitio -->
 
@@ -186,56 +191,58 @@
                     </div>
                 </div>
             </div>
-            <!-- fin productos destacados -->
         </section>
+        <!-- fin productos destacados -->
     </main>
 
-    <!--inicio Footer -->
+    <!-- inicio Footer -->
     <footer class="pt-4 bg-dark">
 
-<!-- Footer Elements -->
-<div class="container">
 
-    <!--columnas-->
-    <div class="row">
+        <div class="container">
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+            <div class="row">
+
+                <div class="col-md-6 mb-4">
 
 
-            <h5 class="text-uppercase">Integrantes Grupo 5</h5>
-            <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+                    <h5 class="text-uppercase">Integrantes Grupo 5</h5>
+                    <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+                    <h6>Repositorio</h6>
+                    <a href="https://github.com/marcoskukuchka/TpWeb2.git"><i class="fab fa-github"> </i> GitHub </a>
 
-        </div>
-        <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-
-            <form class="input-group">
-                <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
                 </div>
-            </form>
+
+                <div class="col-md-6 mb-4">
+                    <h6>Suscribete a nuestro Newsleter</h6>
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Tu e-mail" aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
 
         </div>
-        <!--Grid column-->
 
-    </div>
-    <!--Grid row-->
 
-</div>
-<!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>
+                Escuela de arte multimedial Da Vinci - Segundo Semestre - Año 2020
+            </p>
+        </div>
+        <!-- Copyright -->
 
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">Escuela de arte multimedial Da Vinci
-    <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
-</div>
-<!-- Copyright -->
+    </footer>
 
-</footer>
-<!-- Footer -->
     <!-- fin Footer -->
 
 

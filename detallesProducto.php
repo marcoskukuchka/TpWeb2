@@ -40,51 +40,117 @@
     </nav>
   </header>
   <!-- Fin Navegacion -->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3 pt-5">
+        <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+        <h1 class="pt-5">El Bardo Inmortal</h1>
+        <div class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="productos.php" class="font-weight-bold">Volver</a>
+          </li>
+        </div>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Product Name</h3>
+            <h4>$24.99</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+          </div>
+        </div>
+        <!-- /.card -->
+
+        <div class="card card-outline-secondary my-4">
+          <div class="card-header">
+            Product Reviews
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <a href="#" class="btn btn-success">Leave a Review</a>
+          </div>
+        </div>
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+
+
+
+
+  <!-- inicio Footer -->
   <footer class="pt-4 bg-dark">
 
-    <!-- Footer Elements -->
+
     <div class="container">
 
-        <!--columnas-->
-        <div class="row">
+      <div class="row">
 
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
+        <div class="col-md-6 mb-4">
 
 
-                <h5 class="text-uppercase">Integrantes Grupo 5</h5>
-                <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+          <h5 class="text-uppercase">Integrantes Grupo 5</h5>
+          <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+          <h6>Repositorio</h6>
+          <a href="https://github.com/marcoskukuchka/TpWeb2.git"><i class="fab fa-github"> </i> GitHub </a>
 
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <form class="input-group">
-                    <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
-                    </div>
-                </form>
-
-            </div>
-            <!--Grid column-->
 
         </div>
-        <!--Grid row-->
+
+        <div class="col-md-6 mb-4">
+          <h6>Suscribete a nuestro Newsleter</h6>
+          <form class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Tu e-mail" aria-label="Your email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
+            </div>
+          </form>
+
+
+        </div>
+
+
+      </div>
+
 
     </div>
-    <!-- Footer Elements -->
+
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">Escuela de arte multimedial Da Vinci
-        <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+    <div class="footer-copyright text-center py-3">
+      <p>
+        Escuela de arte multimedial Da Vinci - Segundo Semestre - Año 2020
+      </p>
     </div>
     <!-- Copyright -->
 
-</footer>
-<!-- Footer -->
+  </footer>
+
+  <!-- fin Footer -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>

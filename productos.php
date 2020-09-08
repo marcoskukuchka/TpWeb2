@@ -12,7 +12,7 @@
 
 <body class="fondo">
 
-<!-- Barra navegacion -->
+    <!-- Barra navegacion -->
 
     <header>
 
@@ -34,13 +34,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
                     </li>
-
                 </ul>
 
             </div>
         </nav>
     </header>
-<!-- Fin Navegacion -->
+    <!-- Fin Navegacion -->
 
     <!-- Contenido pagina -->
     <div id="aside" class="container mt-5">
@@ -49,16 +48,73 @@
 
             <div class="col-lg-3">
 
-                <h1 class="my-4 textosImportantes font-weight-bold">Shop Name</h1>
+                <!--    <h1 class="my-4 textosImportantes font-weight-bold">Shop Name</h1>
                 <div class="list-group">
                     <a href="#" class="list-group-item textosImportantes font-weight-bold">Category 1</a>
                     <a href="#" class="list-group-item textosImportantes font-weight-bold">Category 2</a>
                     <a href="#" class="list-group-item textosImportantes font-weight-bold">Category 3</a>
-                </div>
+                </div> -->
+                <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+                <h1 class="pt-5">El Bardo Inmortal</h1>
 
+                <ul class="list-group pt-5">
+                    <h6>Generos</h6>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Terror</a>
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Drama</a>
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Suspenso</a>
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Policial</a>
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Lectura ligera</a>
+                        <span class="badge badge-primary badge-pill">11</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Fatnasia</a>
+                        <span class="badge badge-primary badge-pill">4</span>
+                    </li>
+                </ul>
+
+                <ul class="list-group pt-3">
+                    <h6>Editoriales</h6>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Planeta</a>
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Alfaguara</a>
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">De Bolsillo</a>
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Salamandra</a>
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Siglo XXI</a>
+                        <span class="badge badge-primary badge-pill">11</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Anagrama</a>
+                        <span class="badge badge-primary badge-pill">4</span>
+                    </li>
+                </ul>
             </div>
             <!-- /.col-lg-3 -->
-            
+
             <div class="col-lg-9">
 
                 <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -86,13 +142,13 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div> 
+                </div>
 
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="detallesProducto.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Item One</a>
@@ -484,52 +540,55 @@
     <!-- /.container -->
 
 
-<!-- Footer -->
-<footer class="pt-4 bg-dark">
-
-<!-- Footer Elements -->
-<div class="container">
-
-    <!--columnas-->
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+    <!-- inicio Footer -->
+    <footer class="pt-4 bg-dark">
 
 
-            <h5 class="text-uppercase">Integrantes Grupo 5</h5>
-            <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+        <div class="container">
 
-        </div>
-        <!--Grid column-->
+            <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4">
 
-            <form class="input-group">
-                <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
+
+                    <h5 class="text-uppercase">Integrantes Grupo 5</h5>
+                    <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+                    <h6>Repositorio</h6>
+                    <a href="https://github.com/marcoskukuchka/TpWeb2.git"><i class="fab fa-github"> </i> GitHub </a>
+
+
                 </div>
-            </form>
+
+                <div class="col-md-6 mb-4">
+                    <h6>Suscribete a nuestro Newsleter</h6>
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Tu e-mail" aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
 
         </div>
-        <!--Grid column-->
 
-    </div>
-    <!--Grid row-->
 
-</div>
-<!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>
+                Escuela de arte multimedial Da Vinci - Segundo Semestre - Año 2020
+            </p>
+        </div>
+        <!-- Copyright -->
 
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">Escuela de arte multimedial Da Vinci
-    <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
-</div>
-<!-- Copyright -->
+    </footer>
 
-</footer>
-<!-- Footer -->
+    <!-- fin Footer -->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
