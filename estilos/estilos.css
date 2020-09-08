@@ -1,14 +1,17 @@
-.logo {
+/* .logo {
     height: 35%;
     width: 35%;
 }
+ */
 
 
 /**Colores**/
 
-.fondo {
+
+/* .fondo {
     background-color: #a8a8a8;
 }
+ */
 
 
 /* .navbar-dark,
@@ -17,6 +20,18 @@
 } */
 
 .textosImportantes,
-nav a {
-    color: #f2f2f2 !important;
-}
+
+/* nav a {
+    color: #f3f7de !important;
+} */
+
+
+/* .navbar-dark {
+    background-color: #F5EEE0 !important;
+} */
+
+
+/* 
+.btn-primary {
+    background-color: #218FFC !important;
+} */
