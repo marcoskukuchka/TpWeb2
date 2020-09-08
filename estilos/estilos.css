@@ -1,0 +1,14 @@
+.fondo-portada {
+    /* imagene de fondo */
+    background-image: /* gradientes como imagen de fondo */
+    linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.561))
+    /* con la coma podemos enlistar imágenes como fondo multiples  */
+    , /* vínculo a la imagen */
+    url(../img/portada.jpg);
+    /* tamaño de imagen de fondo */
+    background-size: cover;
+    /* imagen como mozaico */
+    background-repeat: no-repeat;
+    /* comportamiento ante el scroll */
+    background-attachment: scroll, fixed;
+}

@@ -40,13 +40,13 @@
         </nav>
     </header>
     <!-- contenido pagina -->
-    <main>
+    <main class="fondo-portada">
 
         <!-- identidad sitio -->
         <section class="container">
 
             <!-- carrusel -->
-            <div class="row">
+            <!-- <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -67,11 +67,11 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
+                </div> -->
                 <!-- fin carrusel -->
 
-                <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center">
-                    <h1>Titulo sitio</h1>
+                <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center pt-5">
+                    <h1 class="pt-5">Titulo sitio</h1>
                     <p>Slogan del sitio</p>
                 </div>
         </section>
