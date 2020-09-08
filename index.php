@@ -13,16 +13,39 @@
 <body class="fondo">
 
     <!-- Navegacion -->
-    <?php
-    include("includes/nav.html");
-    ?>
+    <header>
+
+        <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary fixed-top ">
+            <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logoFAA"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
     <!-- contenido pagina -->
     <main>
 
         <!-- identidad sitio -->
         <section class="container mt-5 ">
 
-        <!-- carrusel -->
+            <!-- carrusel -->
             <div class="row">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -45,12 +68,12 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-        <!-- fin carrusel -->
+                <!-- fin carrusel -->
 
-        <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center">
-            <h1>Titulo sitio</h1>
-            <p>Slogan del sitio</p>
-        </div>
+                <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center">
+                    <h1>Titulo sitio</h1>
+                    <p>Slogan del sitio</p>
+                </div>
         </section>
         <!-- fin identidad sitio -->
 
@@ -168,9 +191,51 @@
     </main>
 
     <!--inicio Footer -->
-    <?php
-    include("includes/footer.html")
-    ?>
+    <footer class="pt-4 bg-dark">
+
+<!-- Footer Elements -->
+<div class="container">
+
+    <!--columnas-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+
+            <h5 class="text-uppercase">Integrantes Grupo 5</h5>
+            <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <form class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
+                </div>
+            </form>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</div>
+<!-- Footer Elements -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">Escuela de arte multimedial Da Vinci
+    <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
     <!-- fin Footer -->
 
 

@@ -11,40 +11,86 @@
 </head>
 
 <body>
-  <?php
-  include("includes/nav.html")
-  ?>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
+  <!-- Navegacion -->
+  <header>
+
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary fixed-top ">
+      <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logoFAA"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  <!-- Fin Navegacion -->
+  <footer class="pt-4 bg-dark">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!--columnas-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
 
 
-  <?php
-  include("includes/footer.html")
-  ?>
+                <h5 class="text-uppercase">Integrantes Grupo 5</h5>
+                <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+            </div>
+            <!--Grid column-->
 
-  </body>
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+
+                <form class="input-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
+                    </div>
+                </form>
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Escuela de arte multimedial Da Vinci
+        <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+
+</body>
 
 
 
