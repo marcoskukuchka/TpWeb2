@@ -12,7 +12,7 @@
 
 <body class="fondo">
 
-<!-- Barra navegacion -->
+    <!-- Barra navegacion -->
 
     <header>
 
@@ -34,13 +34,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
                     </li>
-
                 </ul>
 
             </div>
         </nav>
     </header>
-<!-- Fin Navegacion -->
+    <!-- Fin Navegacion -->
 
     <!-- Contenido pagina -->
     <div id="aside" class="container mt-5">
@@ -49,16 +48,73 @@
 
             <div class="col-lg-3">
 
-                <h1 class="my-4 textosImportantes font-weight-bold">Shop Name</h1>
+                <!--    <h1 class="my-4 textosImportantes font-weight-bold">Shop Name</h1>
                 <div class="list-group">
                     <a href="#" class="list-group-item textosImportantes font-weight-bold">Category 1</a>
                     <a href="#" class="list-group-item textosImportantes font-weight-bold">Category 2</a>
                     <a href="#" class="list-group-item textosImportantes font-weight-bold">Category 3</a>
-                </div>
+                </div> -->
+                <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+                <h1 class="pt-5">El Bardo Inmortal</h1>
 
+                <ul class="list-group pt-5">
+                    <h6>Generos</h6>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Terror</a>
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Drama</a>
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Suspenso</a>
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Policial</a>
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Lectura ligera</a>
+                        <span class="badge badge-primary badge-pill">11</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Fatnasia</a>
+                        <span class="badge badge-primary badge-pill">4</span>
+                    </li>
+                </ul>
+
+                <ul class="list-group pt-3">
+                    <h6>Editoriales</h6>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Planeta</a>
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Alfaguara</a>
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">De Bolsillo</a>
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Salamandra</a>
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Siglo XXI</a>
+                        <span class="badge badge-primary badge-pill">11</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="font-weight-bold">Anagrama</a>
+                        <span class="badge badge-primary badge-pill">4</span>
+                    </li>
+                </ul>
             </div>
             <!-- /.col-lg-3 -->
-            
+
             <div class="col-lg-9">
 
                 <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -86,7 +142,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div> 
+                </div>
 
                 <div class="row">
 
