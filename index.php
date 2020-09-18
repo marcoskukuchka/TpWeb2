@@ -42,33 +42,9 @@
     <!-- contenido pagina -->
     <main class="fondo-portada">
 
-        <!-- identidad sitio -->
         <section class="container">
 
-            <!-- carrusel -->
-            <!-- <div class="row">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/01.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/02.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/03.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div> -->
-            <!-- fin carrusel -->
+            <!-- identidad sitio -->
 
             <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center pt-5">
                 <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">

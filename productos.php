@@ -113,7 +113,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.col-lg-3 -->
+           
 
             <div class="col-lg-9">
 
@@ -528,16 +528,16 @@
                     </div>
 
                 </div>
-                <!-- /.row -->
+              
 
             </div>
-            <!-- /.col-lg-9 -->
+            
 
         </div>
-        <!-- /.row -->
+       
 
     </div>
-    <!-- /.container -->
+    
 
 
     <!-- inicio Footer -->
