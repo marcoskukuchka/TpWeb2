@@ -26,11 +26,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
                 <ul class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i></a>
-                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i><span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
