@@ -1,101 +1,11 @@
- <!DOCTYPE html>
- <html lang="es">
-
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-   <link rel="stylesheet" href="estilos/estilos.css">
-   <script src="https://kit.fontawesome.com/cedf025736.js" crossorigin="anonymous"></script>
-   <title>El Bardo Inmortal -Libreria-</title>
- </head>
+<?php
+require_once("includes/head.php");
+?>
+  <!-- fin nav -->
 
 
- <body>
-   <!-- Navegacion -->
-   <header>
+  <!-- footer  -->
+<?php
+require_once("includes/head.php");
+?>
 
-     <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary fixed-top ">
-       <a id="marca" class="navbar-brand" href="index.php"><img src="img/logoCompuesto.png" alt="logoFAA"></a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-
-       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-
-         <ul class="navbar-nav">
-           <li class="nav-item ">
-             <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i></a>
-           </li>
-           <li class="nav-item active">
-             <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i><span class="sr-only">(current)</span></a>
-           </li>
-
-         </ul>
-
-       </div>
-     </nav>
-   </header>
-   <!-- Fin Navegacion -->
-
-
-   <!-- inicio Footer -->
-   <footer class="pt-4 bg-dark">
-
-
-     <div class="container">
-
-       <div class="row">
-
-         <div class="col-md-6 mb-4">
-
-
-           <h5 class="text-uppercase">Integrantes Grupo 5</h5>
-           <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
-           <h6>Repositorio</h6>
-           <a href="https://github.com/marcoskukuchka/TpWeb2.git"><i class="fab fa-github"> </i> GitHub </a>
-
-
-         </div>
-
-         <div class="col-md-6 mb-4">
-           <h6>Suscribete a nuestro Newsleter</h6>
-           <form class="input-group">
-             <input type="text" class="form-control form-control-sm" placeholder="Tu e-mail" aria-label="Your email" aria-describedby="basic-addon2">
-             <div class="input-group-append">
-               <button class="btn btn-sm btn-dark btn-outline-primary my-0" type="button">Suscribete</button>
-             </div>
-           </form>
-
-
-         </div>
-
-
-       </div>
-
-
-     </div>
-
-
-     <!-- Copyright -->
-     <div class="footer-copyright text-center py-3">
-       <p>
-         Escuela de arte multimedial Da Vinci - Segundo Semestre - Año 2020
-       </p>
-     </div>
-     <!-- Copyright -->
-
-   </footer>
-
-   <!-- fin Footer -->
-
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
-
- </body>
-
- </html>
