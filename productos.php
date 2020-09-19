@@ -11,7 +11,7 @@
            <?php
                 require_once("includes/aside.php")
            ?>
-           
+        
 
             <div class="col-lg-9">
 
@@ -63,5 +63,5 @@
 
     <!-- inicio Footer -->
    <?php
-    require_once("includes/footer.php");
+        require_once("includes/footer.php");
    ?>

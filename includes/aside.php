@@ -97,7 +97,7 @@
         <div class="container-fluid h-100">
             <div class="row w-100 align-items-center">
                 <div class="col text-center">
-                    <input type="submit" value="Buscar" class="btn btn-primary mt-2 pl-5 pr-5">
+                    <input type="submit" value="Buscar" class="btn btn-primary mt-2 mb-5 pl-5 pr-5">
                 </div>
             </div>
         </div>
