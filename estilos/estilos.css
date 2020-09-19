@@ -1,7 +1,7 @@
 .fondo-portada {
     /* imagene de fondo */
     background-image: /* gradientes como imagen de fondo */
-    linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.561))
+    linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
     /* con la coma podemos enlistar imágenes como fondo multiples  */
     , /* vínculo a la imagen */
     url(../img/portada.jpg);
@@ -11,4 +11,22 @@
     background-repeat: no-repeat;
     /* comportamiento ante el scroll */
     background-attachment: scroll, fixed;
+}
+
+.titulo {
+    color: red;
+}
+
+
+/* Productos destacados*/
+
+.producto a {
+    position: relative;
+}
+
+.producto .destacado {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    line-height: normal;
 }

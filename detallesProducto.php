@@ -41,7 +41,7 @@
   </header>
   <!-- Fin Navegacion -->
 
-  <!-- Page Content -->
+  <!-- contenido -->
   <div class="container">
 
     <div class="row">
@@ -55,7 +55,7 @@
           </li>
         </div>
       </div>
-      <!-- /.col-lg-3 -->
+    
 
       <div class="col-lg-9">
 
@@ -69,7 +69,7 @@
             4.0 stars
           </div>
         </div>
-        <!-- /.card -->
+        
 
         <div class="card card-outline-secondary my-4">
           <div class="card-header">
@@ -88,15 +88,10 @@
             <a href="#" class="btn btn-success">Leave a Review</a>
           </div>
         </div>
-        <!-- /.card -->
-
       </div>
-      <!-- /.col-lg-9 -->
-
     </div>
-
   </div>
-  <!-- /.container -->
+
 
 
 
