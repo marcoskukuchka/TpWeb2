@@ -52,7 +52,7 @@
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck6">
-                    <label class="custom-control-label" for="customCheck6">Terror</label>
+                    <label class="custom-control-label" for="customCheck6">Miedo</label>
                 </div>
                 <span class="badge badge-primary badge-pill">3</span>
             </li>
@@ -87,7 +87,7 @@
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck11">
-                    <label class="custom-control-label" for="customCheck11">Fatnasia</label>
+                    <label class="custom-control-label" for="customCheck11">Fantasia</label>
                 </div>
                 <span class="badge badge-primary badge-pill">4</span>
             </li>
