@@ -21,10 +21,10 @@
             <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/salamandra2.jpg" alt="Harry poter y el caliz de fuego"></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="detallesProducto.php">Harry Potter y el caliz de fuego</a>
+                    <a href="detallesProducto.php">Tambores de otoño</a>
                 </h4>
                 <h5>$24.99</h5>
-                <p class="card-text">Harry Potter participa en el Torneo de los Tres Magos en Hogwarts, junto a Cedric Diggory, Fleur Delacour y Viktor Krum.</p>
+                <p class="card-text">Despues de huir de Escocia, en 1766 Claire y Jamie emprenden un viaje hacia America.</p>
             </div>
             <div class="card-footer">
                 <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>
