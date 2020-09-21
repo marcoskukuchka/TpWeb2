@@ -6,7 +6,7 @@
 
             <div class="row">
 
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4 text-white">
 
 
                     <h5 class="text-uppercase">Integrantes Grupo 5</h5>
