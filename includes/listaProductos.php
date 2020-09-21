@@ -8,7 +8,9 @@
                     <a href="detallesProducto.php">Harry Potter y el caliz de fuego</a>
                 </h4>
                 <h5>$24.99</h5>
-                <p class="card-text">Harry Potter participa en el Torneo de los Tres Magos en Hogwarts, junto a Cedric Diggory, Fleur Delacour y Viktor Krum.</p>
+                <p class="card-text">Tras otro abominable verano con los Dursley, Harry se dispone a iniciar el cuarto curso en Hogwarts, la famosa escuela de magia y hechicería.
+                 A sus catorce años, a Harry le gustaría ser un joven mago como los demás, sin embargo, al llegar al colegio, 
+                le espera una gran sorpresa que lo obligará a enfrentarse a los desafíos más temibles de toda su vida.  </p>
             </div>
             <div class="card-footer">
                 <small>&#9733; &#9733; &#9733; &#9733; &#9733;</small>
@@ -16,6 +18,7 @@
         </div>
     </div>
 
+    
     <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
             <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/salamandra2.jpg" alt="Harry poter y el caliz de fuego"></a>
@@ -32,6 +35,7 @@
         </div>
     </div>
 
+    
     <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
             <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/salamandra3.jpg" alt="Harry poter y el caliz de fuego"></a>
@@ -357,7 +361,7 @@
                     <a href="detallesProducto.php">Harry Potter y el caliz de fuego</a>
                 </h4>
                 <h5>$24.99</h5>
-                <p class="card-text">Harry Potter participa en el Torneo de los Tres Magos en Hogwarts, junto a Cedric Diggory, Fleur Delacour y Viktor Krum.</p>
+                <p class="card-text">Harry Potter participa en el Torneo de los Tres Magos en Hogwarts, junto a Cedric Diggory, Fleur Delacour y Viktor Krum. </p>
             </div>
             <div class="card-footer">
                 <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>

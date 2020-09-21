@@ -30,7 +30,7 @@
                             <img class="d-block img-fluid" src="img/banner/bannerSigloxxi.jpg" alt="editorial siglo veintiuno">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/banner/alfaguaraBanner.jpg" alt="editorial salamandra">
+                            <img class="d-block img-fluid" src="img/banner/alfaguaraBanner.jpg" alt="editorial Alfaguara">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
