@@ -52,7 +52,7 @@
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck6">
-                    <label class="custom-control-label" for="customCheck6">Miedo</label>
+                    <label class="custom-control-label" for="customCheck6">Terror</label>
                 </div>
                 <span class="badge badge-primary badge-pill">3</span>
             </li>
