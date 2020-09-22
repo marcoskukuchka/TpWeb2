@@ -33,20 +33,22 @@ require_once("includes/head.php");
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100 producto">
                        
-                            <a href="detallesProducto.php"><img class="card-img-top" src="http://placehold.it/700x400" alt=""><span class="badge badge-danger destacado">NOVEDAD</span></a>
+                            <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/alfaguara2.jpg"><span class="badge badge-danger destacado">NOVEDAD</span></a>
                             
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="detallesProducto.php">Item One</a>
+                                    <a href="detallesProducto.php">Lo mucho que te ame</a>
                                 </h4>
-                                <h5>$24.99</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                                <h5>$899</h5>
+                                <p class="card-text">«Creo que si alguien supiese la historia de mi vida la vería como una vida mal vivida, llena de secretos...</p>
                             </div>
                             <div class="card-footer">
                                 <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                             </div>
                         </div>
                     </div>
+
+
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100 producto">

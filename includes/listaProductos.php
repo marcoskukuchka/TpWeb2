@@ -182,7 +182,7 @@
             <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/anagrama2.jpg" alt="Mi coraon sedicioso"></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="detallesProducto.php">Mi coraon sedicioso</a>
+                    <a href="detallesProducto.php">Mi corazon sedicioso</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Arundhati Roy investiga y denuncia. Los imprescindibles ensayos políticos  de la escritora india.</p>

@@ -1,3 +1,10 @@
+.reset {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
 .fondo-portada {
     /* imagene de fondo */
     background-image:
@@ -13,6 +20,11 @@
     background-repeat: no-repeat;
     /* comportamiento ante el scroll */
     background-attachment: scroll, fixed;
+}
+
+
+.fondonav {
+    background-color: #7EA89A;
 }
 
 .titulo {
@@ -37,9 +49,7 @@
 
 /*Footer*/
 
-.fondonav {
-    background-color: #7EA89A;
-}
+
 
 .fondofooter {
     background-color: #7EA89A;
@@ -55,11 +65,6 @@ a:hover {
     text-decoration: none;
 }
 
-.reset {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    list-style-type: none;
-}
+
 
 
