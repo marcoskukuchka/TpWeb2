@@ -1,10 +1,12 @@
 .fondo-portada {
     /* imagene de fondo */
-    background-image: /* gradientes como imagen de fondo */
-    linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
-    /* con la coma podemos enlistar imágenes como fondo multiples  */
-    , /* vínculo a la imagen */
-    url(../img/portada.jpg);
+    background-image:
+        /* gradientes como imagen de fondo */
+        linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
+        /* con la coma podemos enlistar imágenes como fondo multiples  */
+        ,
+        /* vínculo a la imagen */
+        url(../img/portada.jpg);
     /* tamaño de imagen de fondo */
     background-size: cover;
     /* imagen como mozaico */
@@ -14,7 +16,7 @@
 }
 
 .titulo {
-    color: red;
+    color: white;
 }
 
 
@@ -30,3 +32,34 @@
     right: 5px;
     line-height: normal;
 }
+
+
+
+/*Footer*/
+
+.fondonav {
+    background-color: #7EA89A;
+}
+
+.fondofooter {
+    background-color: #7EA89A;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    color: #DC6094;
+    text-decoration: none;
+}
+
+.reset {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+

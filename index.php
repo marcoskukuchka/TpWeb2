@@ -13,8 +13,8 @@ require_once("includes/head.php");
             <h1 class="pt-5 titulo">El Bardo Inmortal</h1>
 
             <blockquote class="blockquote">
-                <p class="mb-0">"No existe nada bueno ni malo, es el pensamiento humano el que lo hace parecer así"</p>
-                <footer class="blockquote-footer"> <cite title="Source Title"> William Shakespeare </cite></footer>
+                <p class="mb-0 text-white">"No existe nada bueno ni malo, es el pensamiento humano el que lo hace parecer así"</p>
+                <p class="blockquote-footer text-white"> <cite title="Source Title"> William Shakespeare </cite></p>
             </blockquote>
         </div>
     </section>
