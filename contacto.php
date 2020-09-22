@@ -6,7 +6,7 @@ require_once("includes/head.php");
 
 <div class="container mt-5 pt-5 mb-5">
   <p class="text-uppercase" >Contactenos</p>
-  <form>
+  <form action="guardaDatos.php" method="POST">
     <div class="form-row">
       <div class="form-group col-md-6">
       <label for="Nombre">Nombre<span>*</span></label>
@@ -31,7 +31,7 @@ require_once("includes/head.php");
 
     <div class="form-row">
         <div class="col-md-12 mb-4">
-            <label for="validarTema">Tema:<span>*</span></label>
+            <label for="Asunto">Asunto:<span>*</span></label>
             <select class="custom-select" id="Area" name="Area" required>
                 <option selected disabled value="">Selecciona...</option>
                 <option value="Productos destacados">Productos destacados</option>
@@ -49,8 +49,8 @@ require_once("includes/head.php");
     </div>
 
     <div class="form-group mb-8">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-    <button type="reset" class="btn btn-success" >Limpiar</button>
+    <button type="submit" class="btn btn-primary"><a href='gracias.php' class="text-success"> Enviar</a></button>
+    <button type="reset" class="btn btn-success"><a href='contacto.php' class="text-success">Limpiar</a></button>
     </div>
   </form>
 
