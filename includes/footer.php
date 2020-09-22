@@ -20,7 +20,7 @@
                                <input type="email" class="form-control" id="email" placeholder="Direccion de email">
                                <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                            </div>
-                           <button type="submit" class=" btn-block btn-warning" style="">Suscribime</button>
+                           <button type="submit" class=" btn-block btn-warning">Suscribime</button>
                        </form>
                    </div>
 
