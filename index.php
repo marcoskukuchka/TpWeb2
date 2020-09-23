@@ -26,7 +26,7 @@ require_once("includes/head.php");
 
         <div id="aside" class="container mt-5">
 
-            <div class="col-lg-12">
+            <div class="col-lg-10 m-auto">
 
                 <div class="row">
 
