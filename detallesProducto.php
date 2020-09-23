@@ -31,6 +31,12 @@
         <div class="card-header">
           Product Reviews
         </div>
+        <div class="card-header">
+          <p>marca</p> <!-- poner arriba editorial y genero de forma linda -->
+        </div>
+        <div>
+          <p class="card-header">genero</p>
+        </div>
         <div class="card-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
           <small class="text-muted">Posted by Anonymous on 3/1/17</small>
