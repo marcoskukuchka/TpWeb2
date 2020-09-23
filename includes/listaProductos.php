@@ -2,7 +2,7 @@
 
     <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-            <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/salamandra1.jpg" alt="Harry poter y el caliz de fuego"></a>
+            <a href="detallesProducto.php"><img class="card-img-top"  src="img/miniaturas/salamandra1.jpg" alt="Harry poter y el caliz de fuego"></a>
             <div class="card-body">
                 <h4 class="card-title">
                     <a href="detallesProducto.php">Harry Potter y el caliz de fuego</a>
