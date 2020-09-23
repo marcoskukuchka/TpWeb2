@@ -7,13 +7,11 @@
 
 .fondo-portada {
     /* imagene de fondo */
-    background-image:
-        /* gradientes como imagen de fondo */
-        linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
-        /* con la coma podemos enlistar imágenes como fondo multiples  */
-        ,
-        /* vínculo a la imagen */
-        url(../img/portada.jpg);
+    background-image: /* gradientes como imagen de fondo */
+    linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
+    /* con la coma podemos enlistar imágenes como fondo multiples  */
+    , /* vínculo a la imagen */
+    url(../img/portada.jpg);
     /* tamaño de imagen de fondo */
     background-size: cover;
     /* imagen como mozaico */
@@ -22,9 +20,9 @@
     background-attachment: scroll, fixed;
 }
 
-
 .fondonav {
-    background-color: #7EA89A;
+    /*  background-color: #7EA89A; */
+    background-color: #4b3621b1;
 }
 
 .titulo {
@@ -46,13 +44,11 @@
 }
 
 
-
 /*Footer*/
 
-
-
 .fondofooter {
-    background-color: #7EA89A;
+    /* background-color: #7EA89A; */
+    background-color: #4b3621;
 }
 
 a {
@@ -64,7 +60,3 @@ a:hover {
     color: #DC6094;
     text-decoration: none;
 }
-
-
-
-
