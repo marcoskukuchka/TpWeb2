@@ -8,13 +8,13 @@ require_once("includes/head.php");
 
         <!-- identidad sitio -->
 
-        <div class=" container col-lg-4 col-md-6 mb-4 justify-content-center text-center pt-5">
+        <div class=" container col-lg-6 col-md-6 mb-4 justify-content-center text-center pt-5">
             <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
-            <h1 class="pt-5 titulo">El Bardo Inmortal</h1>
+            <h1 class="pt-5 titulo text-uppercase">El Bardo Inmortal</h1>
 
             <blockquote class="blockquote">
                 <p class="mb-0 text-white">"No existe nada bueno ni malo, es el pensamiento humano el que lo hace parecer así"</p>
-                <p class="blockquote-footer text-white"> <cite title="Source Title"> William Shakespeare </cite></p>
+                <p class="blockquote-footer text-white ml-5 pl-5 pt-2 text-right"> <cite title="Source Title"> William Shakespeare </cite></p>
             </blockquote>
         </div>
     </section>
@@ -27,9 +27,8 @@ require_once("includes/head.php");
         <div id="aside" class="container mt-5">
 
             <div class="col-lg-10 m-auto">
-
+           <!--  <h2 class="mb-4 text-warning">Productos destacados</h2> -->
                 <div class="row">
-
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100 producto">
                        
