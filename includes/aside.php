@@ -24,28 +24,28 @@
                     <input type="checkbox" class="custom-control-input " id="customCheck7">
                     <label class="custom-control-label" for="customCheck7">Drama</label>
                 </div>
-                <span class="badge badge-primary badge-pill">7</span>
+                <span class="badge badge-primary badge-pill">5</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck8">
                     <label class="custom-control-label" for="customCheck8">Suspenso</label>
                 </div>
-                <span class="badge badge-primary badge-pill">8</span>
+                <span class="badge badge-primary badge-pill">4</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck9">
                     <label class="custom-control-label" for="customCheck9">Policial</label>
                 </div>
-                <span class="badge badge-primary badge-pill">14</span>
+                <span class="badge badge-primary badge-pill">6</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck10">
                     <label class="custom-control-label" for="customCheck10">Lectura ligera</label>
                 </div>
-                <span class="badge badge-primary badge-pill">11</span>
+                <span class="badge badge-primary badge-pill">3</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
