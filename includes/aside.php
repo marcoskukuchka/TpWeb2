@@ -2,52 +2,15 @@
 
 
     <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
-    <h1 class="pt-5">El Bardo Inmortal</h1>
+    <h1 class="pt-3 text-center text-uppercase">El Bardo Inmortal</h1>
     <form>
 
 
-        <ul class="list-group pt-3">
-            <h6>Editoriales</h6>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input " id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Planeta</label>
-                </div>
-                <span class="badge badge-primary badge-pill">3</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input " id="customCheck2">
-                    <label class="custom-control-label" for="customCheck2">De Bolsillo</label>
-                </div>
-                <span class="badge badge-primary badge-pill">8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input " id="customCheck3">
-                    <label class="custom-control-label" for="customCheck3">Salamandra</label>
-                </div>
-                <span class="badge badge-primary badge-pill">7</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input " id="customCheck4">
-                    <label class="custom-control-label" for="customCheck4">Siglo XXI</label>
-                </div>
-                <span class="badge badge-primary badge-pill">4</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input " id="customCheck5">
-                    <label class="custom-control-label" for="customCheck5">Anagrama</label>
-                </div>
-                <span class="badge badge-primary badge-pill">9</span>
-            </li>
-        </ul>
+       
 
 
         <ul class="list-group pt-5">
-            <h6>Generos</h6>
+            <h3>Generos</h3>
 
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
@@ -91,8 +54,45 @@
                 </div>
                 <span class="badge badge-primary badge-pill">4</span>
             </li>
+        </ul>
 
-
+        <ul class="list-group pt-3">
+            <h3>Editoriales</h3>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input " id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Planeta</label>
+                </div>
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input " id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">De Bolsillo</label>
+                </div>
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input " id="customCheck3">
+                    <label class="custom-control-label" for="customCheck3">Salamandra</label>
+                </div>
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input " id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4">Siglo XXI</label>
+                </div>
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input " id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5">Anagrama</label>
+                </div>
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
         </ul>
         <div class="container-fluid h-100">
             <div class="row w-100 align-items-center">

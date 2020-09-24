@@ -31,6 +31,12 @@
         <div class="card-header">
           Product Reviews
         </div>
+        <div class="card-header">
+          <p>marca</p> <!-- poner arriba editorial y genero de forma linda -->
+        </div>
+        <div>
+          <p class="card-header">genero</p>
+        </div>
         <div class="card-body">
           <p>Es uno de los mejores libros de la saga, junto con el tres y el siete, es un formato mucho más largo y complejo, la historia tiene mucho más detalles que la otra, pero por eso no deja de ser entretenida, incluso, se llegan a tocar temas mucho más serios y profundos, como la muerte, la traición, etc, etc. Es un libro estupendo, lo recomiendo ampliamente.</p>
           <small class="text-muted">Posted by Anonymous on 3/1/17</small>
