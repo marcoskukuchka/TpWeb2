@@ -2,7 +2,7 @@
 
 
     <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
-    <h1 class="pt-5">El Bardo Inmortal</h1>
+    <h1 class="pt-3 text-center text-uppercase">El Bardo Inmortal</h1>
     <form>
 
 
@@ -10,7 +10,7 @@
 
 
         <ul class="list-group pt-5">
-            <h6>Generos</h6>
+            <h3>Generos</h3>
 
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
@@ -57,7 +57,7 @@
         </ul>
 
         <ul class="list-group pt-3">
-            <h6>Editoriales</h6>
+            <h3>Editoriales</h3>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input " id="customCheck1">
