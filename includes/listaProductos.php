@@ -137,7 +137,7 @@
                     <a href="detallesProducto.php">Ginebra</a>
                 </h4>
                 <h5>$979</h5>
-                <p class="card-text">«El agua de la tierra se evapora, el viento raspa las piedras, las hojas caen de los árboles, las palabras...</p>
+                <p class="card-text">El agua de la tierra se evapora, el viento raspa las piedras, las hojas caen de los árboles, las palabras...</p>
             </div>
             <div class="card-footer">
                 <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -296,7 +296,7 @@
                     <a href="detallesProducto.php">Grandes esperanzas</a>
                 </h4>
                 <h5>$1599</h5>
-                <p class="card-text">«El corazón humano es un instrumento de muchas cuerdas; el perfecto conocedor de los hombres las sabe hacer vibrar todas...</p>
+                <p class="card-text">El corazón humano es un instrumento de muchas cuerdas; el perfecto conocedor de los hombres las sabe hacer vibrar todas...</p>
             </div>
             <div class="card-footer">
                 <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>
