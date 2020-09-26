@@ -15,15 +15,15 @@ require_once("includes/head.php");
 
 
 
-      <div class="col-lg-9 ">
+      <div class="col-lg-9 col-md-8 ">
 
         <div class="card mt-4">
           <img class="card-img-top img-fluid" src="img/banner/harry_potter_banner.png" alt="">
           <div class="card-body">
             <h3 class="card-title">Harry Potter y el caliz de fuego</h3>
-            <h4>$1699</h4>
-            <h5>Editorial: Salamandra</h5>
-            <h5>Género Literario: Fantasía</h5>
+            <h4 class="pb-1">$1699</h4>
+            <h5 class="pb-1">Editorial: Salamandra</h5>
+            <h5 class="pb-1">Género Literario: Fantasía</h5>
             <p class="card-text">Tras otro abominable verano con los Dursley, Harry se dispone a iniciar el cuarto curso en Hogwarts, la famosa escuela de magia y hechicería. A sus catorce años, a Harry le gustaría ser un joven mago como los demás, sin embargo, al llegar al colegio, le espera una gran sorpresa que lo obligará a enfrentarse a los desafíos más temibles de toda su vida</p>
             <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
             4.0 estrellas
@@ -32,18 +32,8 @@ require_once("includes/head.php");
 
 
         <div class="card card-outline-secondary my-4">
-          <div class="card-header">
-            Descripción del libro
-          </div>
-          <div class="card-body d-flex">
-            <p class="mr-2">Editorial:</p>
-            <p>Salamandra</p>
-
-            <!-- poner arriba editorial y genero de forma linda -->
-          </div>
-          <div class="card-body d-flex">
-            <p class="mr-2">Genero literario:</p>
-            <p>Fantasía</p>
+          <div class="card-body">
+            <h4>Comentarios</h4>
           </div>
           <div class="card-body">
             <p>Es uno de los mejores libros de la saga, junto con el tres y el siete, es un formato mucho más largo y complejo, la historia tiene mucho más detalles que la otra, pero por eso no deja de ser entretenida, incluso, se llegan a tocar temas mucho más serios y profundos, como la muerte, la traición, etc, etc. Es un libro estupendo, lo recomiendo ampliamente.</p>

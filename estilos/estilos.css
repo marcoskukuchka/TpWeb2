@@ -74,3 +74,9 @@ a:hover {
         display: none;
     }
 }
+
+@media(min-width: 550px) and (max-width: 1000px) {
+    .dividir {
+        display: flex;
+    }
+}

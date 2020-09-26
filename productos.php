@@ -16,7 +16,7 @@ require_once("includes/head.php");
             ?>
 
 
-            <div class="col-lg-9 mr-0">
+            <div class="col-lg-9 col-md-8">
 
                 <!-- carrusel -->
                 <div id="carouselExampleIndicators" class="carousel slide my-4 ocultar" data-ride="carousel">
