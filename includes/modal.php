@@ -1,4 +1,4 @@
-<button class="btn btn-success" data-toggle="modal" data-target="#ventanaModal">Dejar comentario</button>
+<button class="btn btn-warning" data-toggle="modal" data-target="#ventanaModal">Dejar comentario</button>
 
 
 <div class="modal" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
@@ -30,11 +30,11 @@
                             <option value="1 estrella"><span class="text-warning">&#9733; &#9734; &#9734; &#9734; &#9734;</span></option>
                         </select>
                     
-                    <div>
-                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+                    <div class="mt-3">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">
                             cerrar
                         </button>
-                        <button class="btn btn-success" type="button">
+                        <button class="btn btn-warning" type="button">
                             aceptar
                         </button>
                     </div>

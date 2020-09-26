@@ -20,7 +20,7 @@ require_once("includes/head.php");
   </section>
 
   <section>
-    <div class="container mt-5 pt-5 pb-5">
+    <div class="container col-lg-6 mt-5 pt-5 pb-5">
       <h2 class="text-uppercase display-4 text-white sombra">Contactenos</h2>
       <form action="guardaDatos.php" method="POST">
         <div class="form-row">
@@ -44,10 +44,16 @@ require_once("includes/head.php");
             <input type="number" class="form-control" id="Telefono" placeholder="Telefono" max="99999999999999">
           </div>
         </div>
+        
 
         <div class="form-row">
-          <div class="col-md-6 mb-4">
-            <label class="colorlbl" for="Asunto">Asunto:<span></span></label>
+        <div class="col-md-6">
+            <label class="colorlbl" for="Asunto"></label>
+            <input type="Nombre" class="form-control" id="Nombre" placeholder="Asunto" required>
+          </div>
+          <div class="col-md-6">
+
+            <label class="colorlbl" for="Asunto"><span></span></label>
             <select class="custom-select" id="Area" name="Area" required>
               <option selected disabled value="">Para:</option>
               <option value="Productos destacados">ventas@elbardo.com.ar</option>
@@ -55,16 +61,17 @@ require_once("includes/head.php");
               <option value="Anagrama">pedidos@elbardo.com.ar</option>
               <option value="Planeta">reclamos@elbardo.com.ar</option>
             </select>
+            
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group pt-3">
           <label class="colorlbl" for="Mensaje">Mensaje:</label>
           <textarea class="form-control" id="Mensaje" name="Mensaje" rows="6" min="50" required></textarea>
         </div>
 
-        <div class="form-group">
-          <button type="reset" class="btn btn-success"><a href='contacto.php' class="text-white">Limpiar</a></button>
-          <button type="submit" class="btn btn-warning"><a href='gracias.php' class="text-dark font-weight-bold"> Enviar</a></button>
+        <div class="">
+          <button type="reset" class="btn btn-secondary mr-3"><a href='contacto.php' class="text-white">Limpiar</a></button>
+          <button type="submit" class="btn btn-warning"><a href='gracias.php' class="text-dark"> Enviar</a></button>
         </div>
       </form>
 
