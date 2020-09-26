@@ -19,7 +19,7 @@
                             <input type="email" class="form-control" id="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button type="submit" class=" btn-block btn-warning">Suscribime</button>
+                        <button type="submit" class=" btn-block btn-warning">Suscribirme</button>
                     </form>
                 </div>
 
@@ -61,7 +61,7 @@
 
 
         <div class="text-center">
-            <p><strong> Escuela de Arte Multimedial Da Vinci - Segundo Cuatrimestre - Año 2020</strong></p>
+            <p><strong> Escuela de Arte Multimedial Da Vinci - Asbn - Segundo Cuatrimestre - Año 2020</strong></p>
 
         </div>
     </div>
