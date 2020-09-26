@@ -17,7 +17,7 @@ require_once("includes/head.php");
             <a href="index.php" class="text-success">Volver a inicio</a> </button> 
             
              <button type="button" class="btn btn-outline-dark">
-            <a href="productos.php" class="text-success"> Seguir comprando</a>
+            <a href="productos.php" class="text-success"> Seguir comprando.</a>
            </button>           
 </div>
 </div> 
