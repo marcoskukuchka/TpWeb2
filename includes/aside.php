@@ -35,7 +35,7 @@
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input " id="customCheck4">
-                        <label class="custom-control-label" for="customCheck4">Siglo XXI</label>
+                        <label class="custom-control-label" for="customCheck4">Alfaguara</label>
                     </div>
                     <span class="badge badge-success badge-pill">5</span>
                 </li>
