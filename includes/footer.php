@@ -19,7 +19,7 @@
                             <input type="email" class="form-control" id="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button type="submit" class=" btn-block btn-warning">Suscribirme</button>
+                        <button type="submit" class=" btn-block btn-warning"><a href='gracias.php' class="text-dark font-weight-bold">Suscribirme</a></button>
                     </form>
                 </div>
 

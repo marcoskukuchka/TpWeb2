@@ -3,56 +3,77 @@ require_once("includes/head.php");
 ?>
 <!-- fin nav -->
 
+<main class="fondo-portada">
 
-<div class="container mt-5 pt-5 mb-5">
-  <p class="text-uppercase" >Contactenos</p>
-  <form action="guardaDatos.php" method="POST">
-    <div class="form-row">
-      <div class="form-group col-md-6">
-      <label for="Nombre">Nombre:</label>
+  <section class="container">
+
+    <!-- identidad sitio -->
+
+    <div class="container col-lg-9 col-md-6 mb-4 justify-content-center text-center pt-5">
+      <h1 class="pt-5 titulo text-uppercase display-3">El Bardo Inmortal</h1>
+
+      <blockquote class="blockquote">
+        <p class="mb-0 text-white">"Presta el oído a todos, y a pocos la voz. Escucha las censuras de los demás; pero reserva tu propia opinión."</p>
+        <p class="blockquote-footer text-white ml-5 pl-5 pt-2 text-right"> <cite title="Source Title"> William Shakespeare </cite></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 pt-5 pb-5">
+      <h2 class="text-uppercase display-4 text-white sombra">Contactenos</h2>
+      <form action="guardaDatos.php" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="colorlbl" for="Nombre">Nombre:</label>
             <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputapellido">Apellido:</label>
-        <input type="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
-      </div>
-    </div>
-    <div class="form-row">
-    <div class="form-group col-md-6 ">
-      <label for="inputAddress">E-mail:</label>
-      <input type="email" class="form-control" id="email" placeholder="Direccion de email">
-    </div>
-
-    <div class="form-group col-md-6">
-    <label for="Telefono">Teléfono:</label>
-    <input type="number" class="form-control" id="Telefono" placeholder="Telefono" max="99999999999999">
-    </div>
-    </div>
-
-    <div class="form-row">
-        <div class="col-md-6 mb-4">
-            <label for="Asunto">Asunto:<span></span></label>
-            <select class="custom-select" id="Area" name="Area" required>
-                <option selected disabled value="">Para:</option>
-                <option value="Productos destacados">ventas@elbardo.com.ar</option>
-                <option value="Alfaguara">info@elbardo.com.ar</option>
-                <option value="Anagrama">pedidos@elbardo.com.ar</option>
-                <option value="Planeta">reclamos@elbardo.com.ar</option>
-            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="colorlbl" for="inputapellido">Apellido:</label>
+            <input type="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
+          </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="Mensaje">Mensaje:</label>
-        <textarea class="form-control" id="Mensaje" name="Mensaje" rows="6" min="50" required></textarea>
+        <div class="form-row">
+          <div class="form-group col-md-6 ">
+            <label class="colorlbl" for="inputAddress">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Direccion de email">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label class="colorlbl" for="Telefono">Teléfono:</label>
+            <input type="number" class="form-control" id="Telefono" placeholder="Telefono" max="99999999999999">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-6 mb-4">
+            <label class="colorlbl" for="Asunto">Asunto:<span></span></label>
+            <select class="custom-select" id="Area" name="Area" required>
+              <option selected disabled value="">Para:</option>
+              <option value="Productos destacados">ventas@elbardo.com.ar</option>
+              <option value="Alfaguara">info@elbardo.com.ar</option>
+              <option value="Anagrama">pedidos@elbardo.com.ar</option>
+              <option value="Planeta">reclamos@elbardo.com.ar</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="colorlbl" for="Mensaje">Mensaje:</label>
+          <textarea class="form-control" id="Mensaje" name="Mensaje" rows="6" min="50" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="reset" class="btn btn-success"><a href='contacto.php' class="text-white">Limpiar</a></button>
+          <button type="submit" class="btn btn-warning"><a href='gracias.php' class="text-dark font-weight-bold"> Enviar</a></button>
+        </div>
+      </form>
+
     </div>
 
-    <div class="form-group mb-8">
-    <button type="reset" class="btn btn-outline-dark"><a href='contacto.php' class="text-success">Limpiar</a></button>
-    <button type="submit" class="btn btn-outline-dark"><a href='gracias.php' class="text-success"> Enviar</a></button>
-    </div>
-  </form>
+  </section>
 
-</div>
+</main>
+
 
 <!-- footer  -->
 <?php

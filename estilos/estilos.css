@@ -5,6 +5,31 @@
     list-style-type: none;
 }
 
+
+/* Fonts */
+
+
+/*  font-family: 'Ubuntu', sans-serif;
+font-family: 'Vollkorn', serif;            */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Vollkorn', serif;
+}
+
+p,
+span,
+a,
+label,
+input,
+textarea {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .fondo-portada {
     /* imagene de fondo */
     background-image: /* gradientes como imagen de fondo */
@@ -25,7 +50,19 @@
     background-color: #4b3621b1;
 }
 
+
+/* colores */
+
 .titulo {
+    color: white;
+    text-shadow: 3px 3px #000000;
+}
+
+.sombra {
+    text-shadow: 3px 3px #000000;
+}
+
+.colorlbl {
     color: white;
 }
 
@@ -75,8 +112,18 @@ a:hover {
     }
 }
 
-@media(min-width: 550px) and (max-width: 1000px) {
-    .dividir {
-        display: flex;
-    }
+
+/* Formulario */
+
+textarea {
+    resize: none;
+}
+
+#FormularioContacto input[type=submit] {
+    background-color: crimson;
+    color: white;
+    text-transform: uppercase;
+    border-width: 0;
+    border-radius: 3px;
+    padding: 16px;
 }

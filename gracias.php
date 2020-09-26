@@ -11,10 +11,13 @@ require_once("includes/head.php");
 
             <!-- identidad sitio -->
 
-            <div class=" container col-lg-6 col-md-6 mb-4 justify-content-center text-center pt-5">
-                  <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
-                  <h1 class="pt-5 titulo text-uppercase">El Bardo Inmortal</h1>
+            <div class="container col-lg-9 col-md-6 mb-4 justify-content-center text-center pt-5">
+                  <h1 class="pt-5 titulo text-uppercase display-3">El Bardo Inmortal</h1>
 
+                  <blockquote class="blockquote">
+                        <p class="mb-0 text-white">"El hombre arruinado lee su condición en los ojos de los demás con tanta rapidez que él mismo siente su caída."</p>
+                        <p class="blockquote-footer text-white ml-5 pl-5 pt-2 text-right"> <cite title="Source Title"> William Shakespeare </cite></p>
+                  </blockquote>
             </div>
       </section>
 
