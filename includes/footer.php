@@ -27,7 +27,7 @@
                     <h5>En cada minuto hay muchos días, aprovechalos con un libro</h5>
                     <p>El Bardo inmortal es una libreria donde podes encontrar todo lo que quieras leer... si no lo tenemos, ¡te lo conseguimos!</p>
 
-                    <h6>Seguinos en las redes sociales</h4>
+                    <h6>Seguinos en las redes sociales</h6>
                         <ul class="justify-content-center list-group list-group-horizontal redes ">
 
                             <li class="list-group-item fondofooter border-0">
@@ -54,8 +54,6 @@
                                 </a>
                             </li>
                         </ul>
-
-
                 </div>
 
             </div>

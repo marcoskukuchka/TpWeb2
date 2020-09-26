@@ -1,22 +1,25 @@
 <?php
-    require_once("includes/head.php");
+require_once("includes/head.php");
 ?>
-    <!-- Fin Navegacion -->
+<!-- Fin Navegacion -->
 
-    <!-- Contenido pagina -->
+<!-- Contenido pagina -->
+<main>
+
+
     <div id="aside" class="container mt-5">
 
         <div class="row">
             <!-- aside filtros -->
-           <?php
-                require_once("includes/aside.php")
-           ?>
-        
+            <?php
+            require_once("includes/aside.php")
+            ?>
 
-            <div class="col-lg-9">
 
-                    <!-- carrusel -->
-                <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <div class="col-lg-9 mr-0">
+
+                <!-- carrusel -->
+                <div id="carouselExampleIndicators" class="carousel slide my-4 ocultar" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,26 +45,30 @@
                         <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
+
+
                 <!-- fin carrusel -->
 
 
                 <!-- incicio productos -->
                 <?php
-                   
-                    require_once("includes/listaProductos.php");
+
+                require_once("includes/listaProductos.php");
                 ?>
 
             </div>
-            
+
 
         </div>
-       
+
 
     </div>
-    
 
 
-    <!-- inicio Footer -->
-   <?php
-        require_once("includes/footer.php");
-   ?>
+
+</main>
+
+<!-- inicio Footer -->
+<?php
+require_once("includes/footer.php");
+?>

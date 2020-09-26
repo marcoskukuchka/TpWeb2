@@ -21,7 +21,7 @@ require_once("includes/head.php");
 
 
       <section>
-            <div class="mx-auto mt-5 pb-5" style="width: 700px;">
+            <div class=" col-lg-6 col-md-6 mx-auto mt-5 pb-5">
                   <div class="alert alert-success" role="alert">
                         <div class="text-center">
                               <h4 class="alert-heading">¡Muchas Gracias!</h4>
@@ -33,7 +33,7 @@ require_once("includes/head.php");
                                     <a href="index.php" class="text-success">Volver a inicio</a> </button>
 
                               <button type="button" class="btn btn-outline-dark">
-                                    <a href="productos.php" class="text-success"> Seguir comprando</a>
+                                    <a href="productos.php" class="text-success"> Seguir mirando</a>
                               </button>
                         </div>
                   </div>

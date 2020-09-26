@@ -59,10 +59,18 @@ a {
 a:hover {
     color: #DC6094;
     text-decoration: none;
-
 }
 
 .detalleproducto {
     width: 600px;
     height: 400px;
+}
+
+
+/* medias */
+
+@media(min-width: 200px) and (max-width: 550px) {
+    .ocultar {
+        display: none;
+    }
 }

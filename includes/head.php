@@ -17,8 +17,8 @@
 
     <header>
 
-        <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark fondonav fixed-top ">
-            <a id="marca" class="navbar-brand" href="index.php"><img class="logos" src="img/logoCabeza.png" alt="logo libreria"></a>
+        <nav class="container-fluid navbar navbar-icon-top navbar-expand-lg navbar-dark fondonav fixed-top ">
+            <a id="marca" class="navbar-brand" href="index.php"><img class="img-fluid logos" src="img/logoCabeza.png" alt="logo libreria"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

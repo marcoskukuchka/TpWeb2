@@ -8,8 +8,8 @@ require_once("includes/head.php");
 
         <!-- identidad sitio -->
 
-        <div class=" container col-lg-6 col-md-6 mb-4 justify-content-center text-center pt-5">
-            <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+        <div class="container col-lg-6 col-md-6 mb-4 justify-content-center text-center pt-5">
+            <img class="pt-5 img-fluid" src="img/elbardoinmortal.png" alt="logo libreria">
             <h1 class="pt-5 titulo text-uppercase">El Bardo Inmortal</h1>
 
             <blockquote class="blockquote">
@@ -27,7 +27,7 @@ require_once("includes/head.php");
         <div id="aside" class="container mt-5">
 
             <div class="col-lg-10 m-auto">
-           <!--  <h2 class="mb-4 text-warning">Productos destacados</h2> -->
+                <!--  <h2 class="mb-4 text-warning">Productos destacados</h2> -->
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100 producto">
