@@ -249,3 +249,4 @@ $a_multi_productos = array (
 $fp = fopen('detalleproductos.json','w');
 fwrite($fp,json_encode($a_multi_productos));
 fclose($fp);
+
