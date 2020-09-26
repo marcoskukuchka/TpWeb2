@@ -1,8 +1,8 @@
-
 <?php
 require_once("includes/head.php");
 ?>
 <!-- fin nav -->
+
 
 
       <div class="mx-auto" style="width: 700px;">
@@ -20,10 +20,8 @@ require_once("includes/head.php");
             <a href="productos.php" class="text-success"> Seguir comprando.</a>
            </button>           
 </div>
-</div> 
- </div>
-    
- <!-- footer  -->
+
+<!-- footer  -->
 <?php
 require_once("includes/footer.php");
 ?>

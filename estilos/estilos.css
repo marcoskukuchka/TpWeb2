@@ -1,3 +1,10 @@
+.reset {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
 .fondo-portada {
     /* imagene de fondo */
     background-image: /* gradientes como imagen de fondo */
@@ -13,8 +20,13 @@
     background-attachment: scroll, fixed;
 }
 
+.fondonav {
+    /*  background-color: #7EA89A; */
+    background-color: #4b3621b1;
+}
+
 .titulo {
-    color: red;
+    color: white;
 }
 
 
@@ -29,4 +41,28 @@
     top: 5px;
     right: 5px;
     line-height: normal;
+}
+
+
+/*Footer*/
+
+.fondofooter {
+    /* background-color: #7EA89A; */
+    background-color: #4b3621;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    color: #DC6094;
+    text-decoration: none;
+
+}
+
+.detalleproducto {
+    width: 600px;
+    height: 400px;
 }
