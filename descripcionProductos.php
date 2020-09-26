@@ -237,7 +237,7 @@ $a_multi_productos = array (
     24 => array ('id_producto' => '24', 
                 'nombre' => 'Secret', 
                 'descripcion_corta' => 'Cassie Robichaud, una joven viuda, es  introducida en S.E.C.R.E.T., un selecto club underground de Nueva Orleans que ayuda a las mujeres...',
-                'descripcion_larga' => 'Tras otro abominable verano con los Dursley, Harry se dispone a iniciar el cuarto curso en Hogwarts, la famosa escuela de magia y hechicería. A sus catorce años, a Harry le gustaría ser un joven mago como los demás, sin embargo, al llegar al colegio, le espera una gran sorpresa que lo obligará a enfrentarse a los desafíos más temibles de toda su vida',
+                'descripcion_larga' => 'Cassie Robichaud, una joven viuda, es  introducida en S.E.C.R.E.T., un selecto club underground de Nueva Orleans que ayuda a las mujeres a disfrutar al máximo de su sexualidad. Asesorada por una matriarca clandestina, Cassie es invitada a experimentar sus fantasías más íntimas siempre que respete los requisitos del club',
                 'precio' => '$239',
                 'editorial' => 'Planeta',
                 'genero' => 'Ficcion',
