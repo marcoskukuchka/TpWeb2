@@ -45,13 +45,13 @@ require_once("includes/head.php");
             <p>Este cuarto libro inicia la maduración de la saga, pensando tal vez en el crecimiento de los lectores, ademas cuenta con la competición que le da un ritmo ameno respecto a los anteriores libros. Que buen ritmo para contar la historia tiene la autora para no hacerlo pesado.</p>
             <small class="text-muted">Subido por Anonimo el 3/1/17</small>
             <hr>
-            <a href="#" class="btn btn-success">Dejar comentario</a>
-
+            <?php
+              require_once("includes/modal.php")
+            ?>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 </main>
 
