@@ -8,8 +8,8 @@ require_once("includes/head.php");
 
         <!-- identidad sitio -->
 
-        <div class=" container col-lg-6 col-md-6 mb-4 justify-content-center text-center pt-5">
-            <img class="pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
+        <div class="container col-lg-6 col-md-6 mb-4 justify-content-center text-center pt-5">
+            <img class="img-fluid pt-5" src="img/elbardoinmortal.png" alt="logo libreria">
             <h1 class="pt-5 titulo text-uppercase">El Bardo Inmortal</h1>
 
             <blockquote class="blockquote">
