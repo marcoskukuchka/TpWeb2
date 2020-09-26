@@ -184,7 +184,7 @@
                 <h4 class="card-title">
                     <a href="detallesProducto.php">Mi corazon sedicioso</a>
                 </h4>
-                <h5>$24.99</h5>
+                <h5>$1799</h5>
                 <p class="card-text">Arundhati Roy investiga y denuncia. Los imprescindibles ensayos políticos  de la escritora india.</p>
             </div>
             <div class="card-footer">
