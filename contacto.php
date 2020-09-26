@@ -47,8 +47,8 @@ require_once("includes/head.php");
     </div>
 
     <div class="form-group mb-8">
-    <button type="reset" class="btn btn-secondary"><a href='contacto.php' class="text-dark font-weight-bold">Limpiar</a></button>
-    <button type="submit" class="btn btn-primary"><a href='gracias.php' class="text-dark font-weight-bold"> Enviar</a></button>
+    <button type="reset" class="btn btn-outline-dark"><a href='contacto.php' class="text-success">Limpiar</a></button>
+    <button type="submit" class="btn btn-outline-dark"><a href='gracias.php' class="text-success"> Enviar</a></button>
     </div>
   </form>
 
