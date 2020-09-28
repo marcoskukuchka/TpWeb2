@@ -95,21 +95,21 @@
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input " id="customCheck11">
+                        <input type="checkbox" class="custom-control-input " id="customCheck12">
                         <label class="custom-control-label" for="customCheck11">Ensayos</label>
                     </div>
                     <span class="badge badge-success badge-pill">1</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input " id="customCheck11">
+                        <input type="checkbox" class="custom-control-input " id="customCheck13">
                         <label class="custom-control-label" for="customCheck11">Cuentos</label>
                     </div>
                     <span class="badge badge-success badge-pill">1</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input " id="customCheck11">
+                        <input type="checkbox" class="custom-control-input " id="customCheck14">
                         <label class="custom-control-label" for="customCheck11">Policial</label>
                     </div>
                     <span class="badge badge-success badge-pill">3</span>
