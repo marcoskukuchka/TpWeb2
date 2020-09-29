@@ -1,4 +1,4 @@
-<?
+<?php
 
 $a_multi_productos = array (
     1 => array ('id_producto' => '1', 
@@ -249,3 +249,6 @@ $a_multi_productos = array (
 $fp = fopen('detalleproductos.json','w');
 fwrite($fp,json_encode($a_multi_productos));
 fclose($fp);
+
+
+?>
