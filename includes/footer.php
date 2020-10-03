@@ -7,7 +7,7 @@
                     <h5>Integrantes Grupo 5</h5>
                     <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
                     <h6>Repositorio</h6>
-                    <a href="https://github.com/marcoskukuchka/TpWeb2.git"><i class="fab fa-github"> </i> GitHub </a>
+                    <a href="https://github.com/marcoskukuchka/TpPHP.git"><i class="fab fa-github"> </i> GitHub </a>
                 </div>
 
                 <div class="col-sm text-center">
@@ -19,7 +19,7 @@
                             <input type="email" class="form-control" id="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button type="submit" class=" btn-block btn-warning">Suscribime</button>
+                        <button type="submit" class="mb-2 btn-block btn-warning"><a href='gracias.php' class="text-dark font-weight-bold">Suscribirme</a></button>
                     </form>
                 </div>
 
@@ -27,7 +27,7 @@
                     <h5>En cada minuto hay muchos días, aprovechalos con un libro</h5>
                     <p>El Bardo inmortal es una libreria donde podes encontrar todo lo que quieras leer... si no lo tenemos, ¡te lo conseguimos!</p>
 
-                    <h6>Seguinos en las redes sociales</h4>
+                    <h6>Seguinos en las redes sociales</h6>
                         <ul class="justify-content-center list-group list-group-horizontal redes ">
 
                             <li class="list-group-item fondofooter border-0">
@@ -54,8 +54,6 @@
                                 </a>
                             </li>
                         </ul>
-
-
                 </div>
 
             </div>
@@ -63,7 +61,7 @@
 
 
         <div class="text-center">
-            <p><strong> Escuela de Arte Multimedial Da Vinci - Segundo Cuatrimestre - Año 2020</strong></p>
+            <p><strong> Escuela de Arte Multimedial Da Vinci - Asbn - Segundo Cuatrimestre - Año 2020</strong></p>
 
         </div>
     </div>
