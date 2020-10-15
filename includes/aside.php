@@ -23,7 +23,7 @@ $ESTE_ARCHIVO  = 'ejemplo.php';
 //guardo json en array
 $a_multi_genero = json_decode(file_get_contents('./json/genero.json'), true);
 $a_multi_editorial = json_decode(file_get_contents('./json/editorial.json'), true);
-$a_multi_productos = json_decode(file_get_contents('./json/detalleproducto.json'), true);
+$a_multi_productos = json_decode(file_get_contents('./json/detalleproductos.json'), true);
 
 ?>
 
