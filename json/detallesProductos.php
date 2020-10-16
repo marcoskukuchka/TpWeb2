@@ -187,7 +187,7 @@ $a_multi_productos = array (
                 'id_editorial' => 2,
                 'id_genero' => 6,
                 'destacado' => false,
-                'url' => 'img/miniaturas/debolsillo2.jpg.jpg',
+                'url' => 'img/miniaturas/debolsillo2.jpg',
                 ),
     18 => array ('id_producto' => 18, 
                 'nombre' => 'Diarios', 
