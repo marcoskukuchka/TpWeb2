@@ -20,7 +20,7 @@ require_once("includes/head.php");
         <div class="card mt-4">
           <img class="card-img-top img-fluid" src="img/banner/harry_potter_banner.png" alt="">
           <div class="card-body">
-            <h3 class="card-title">Harry Potter y el caliz de fuego</h3>
+            <h3 class="card-title">titulo titulo</h3>
             <h4 class="pb-1">$1699</h4>
             <h5 class="pb-1">Editorial: Salamandra</h5>
             <h5 class="pb-1">Género Literario: Fantasía</h5>

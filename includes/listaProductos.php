@@ -4,9 +4,7 @@
     if ( ( in_array($a_producto['id_editorial'],$id_editorial) || empty($id_editorial) ) &&
        ( ( in_array($a_producto['id_genero'],$id_genero) || empty($id_genero) )))
     {
-      /*  echo '<pre>';
-       print_r($a_producto);
-       echo '</pre><hr>'; */
+    
 ?>
 
     <div class="col-lg-4 col-md-6 mb-4">
