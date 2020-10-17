@@ -10,6 +10,10 @@ function contarItems($array, $indice, $valorBuscado){
     return $contador;
 }
 
-
-
+function calculoEstrellas ($array, $valoracion, $producto)
+    foreach ($array as $items_array) {
+        if ($items_array[$valoracion] == ) {
+            # code...
+        }
+    }
 ?>

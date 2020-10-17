@@ -18,7 +18,7 @@
                 <p class="card-text"><?php echo $a_producto['descripcion_corta'];?></p>
             </div>
             <div class="card-footer">
-                <small>&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                <small>&#9733; &#9733; &#9733; &#9734; &#9734;</small>
             </div>
         </div>
     </div>
