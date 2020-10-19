@@ -22,12 +22,60 @@ function muestraEstrellas($array, $indice, $producto_buscado){
         }
     }
     
-    $promedio = $suma / $contador;
+    
+    $promedio = round($suma / $contador);
     $estrellas = "";
     for ($i=0; $i < $promedio ; $i++) { 
         $estrellas = $estrellas . '&#9733; ';
         
     }
+        
+    switch ($promedio) {
+        case 4:
+            $estrellas = $estrellas . '&#9734; ';
+            break;
+        case 3:
+            $estrellas = $estrellas . '&#9734; ' . '&#9734; ';
+            break;
+        case 2:
+            $estrellas = $estrellas . '&#9734; ' . '&#9734; ' . '&#9734; ';
+            break;
+        case 1:
+            $estrellas = $estrellas . '&#9734; ' . '&#9734; ' . '&#9734; ' . '&#9734; ';
+            break;
+
+        default:
+            # code...
+            break;
+    }    
+   
     return $estrellas;
 }
-?>
+
+function valoracionComentario($valor_buscado){
+    $estrellas = "";
+    for ($i=0; $i < $valor_buscado ; $i++) { 
+        $estrellas = $estrellas . '&#9733; ';
+        
+    }
+    switch ($valor_buscado) {
+        case 4:
+            $estrellas = $estrellas . '&#9734; ';
+            break;
+        case 3:
+            $estrellas = $estrellas . '&#9734; ' . '&#9734; ';
+            break;
+        case 2:
+            $estrellas = $estrellas . '&#9734; ' . '&#9734; ' . '&#9734; ';
+            break;
+        case 1:
+            $estrellas = $estrellas . '&#9734; ' . '&#9734; ' . '&#9734; ' . '&#9734; ';
+            break;
+
+        default:
+            # code...
+            break;
+    }    
+    return $estrellas;
+}
+

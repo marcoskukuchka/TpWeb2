@@ -267,6 +267,7 @@ $a_multi_productos = array (
                 'destacado' => false,
                 'url' => 'img/miniaturas/planeta4.jpg',
                 )
+                
 );
 echo '<pre>';
 print_r($a_multi_productos);

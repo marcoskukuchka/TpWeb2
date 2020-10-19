@@ -11,6 +11,20 @@ require_once("includes/head.php");
     <div class="row">
       <?php
       require_once("includes/aside.php");
+      require_once("includes/func/funciones.php");
+      $id_libro = $_REQUEST['id'];
+      
+      $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
+      $a_multi_comentarios = json_decode(file_get_contents('json/comentarios.json'), true);
+      $a_multi_editorial = json_decode(file_get_contents('json/editorial.json'), true);
+      $a_multi_genero = json_decode(file_get_contents('json/genero.json'), true);
+     
+      $a_producto = $a_multi_productos[$id_libro];
+      $a_editorial = $a_multi_editorial[$a_producto['id_editorial']];
+      $a_genero = $a_multi_genero[$a_producto['id_genero']];
+      
+
+     
       ?>
 
 
@@ -20,13 +34,14 @@ require_once("includes/head.php");
         <div class="card mt-4">
           <img class="card-img-top img-fluid" src="img/banner/harry_potter_banner.png" alt="">
           <div class="card-body">
-            <h3 class="card-title">titulo titulo</h3>
-            <h4 class="pb-1">$1699</h4>
-            <h5 class="pb-1">Editorial: Salamandra</h5>
-            <h5 class="pb-1">Género Literario: Fantasía</h5>
-            <p class="card-text">Tras otro abominable verano con los Dursley, Harry se dispone a iniciar el cuarto curso en Hogwarts, la famosa escuela de magia y hechicería. A sus catorce años, a Harry le gustaría ser un joven mago como los demás, sin embargo, al llegar al colegio, le espera una gran sorpresa que lo obligará a enfrentarse a los desafíos más temibles de toda su vida</p>
-            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-            4.0 estrellas
+            <h3 class="card-title"><?php echo $a_producto['nombre']; ?></h3>
+            <h4 class="pb-1"><?php echo $a_producto['precio']; ?></h4>
+            <h5 class="pb-1">Editorial: <?php echo $a_editorial['nombre'] ?></h5>
+            <h5 class="pb-1">Género Literario: <?php echo $a_genero['nombre'] ?></h5>
+            <p class="card-text"><?php echo $a_producto['descripcion_larga'] ?></p>
+            <p class="font-weight-bold">Valoracion general</p>
+            <span class="text-warning"><?php echo muestraEstrellas($a_multi_comentarios,'id_producto', $a_producto['id_producto']);?></span>
+            
           </div>
         </div>
 
@@ -36,17 +51,26 @@ require_once("includes/head.php");
             <h4>Comentarios</h4>
           </div>
           <div class="card-body">
-            <p>Es uno de los mejores libros de la saga, junto con el tres y el siete, es un formato mucho más largo y complejo, la historia tiene mucho más detalles que la otra, pero por eso no deja de ser entretenida, incluso, se llegan a tocar temas mucho más serios y profundos, como la muerte, la traición, etc, etc. Es un libro estupendo, lo recomiendo ampliamente.</p>
-            <small class="text-muted">Subido por Anonimo el 3/1/19</small>
-            <hr>
-            <p>La saga Potter crece a la par que el lector y profundiza en los personajes, sus conflictos y sus historias individuales. Sin embargo, al intentar variar aquello que le salió tan bien en las primeras entregas y darle un matiz más oscuro y adulto (que incluso se acerca al terror) J. K. Rowling iría perdiendo espontaneidad hasta írsele la saga de las manos. Sin ir más lejos, aspectos como el del enamoramiento y el paso de la infancia a la adolescencia de Potter los encuentro muy poco logrados. Magia, fantasía y aventuras que no falten.</p>
-            <small class="text-muted">Subido por Anonimo el 3/1/18</small>
-            <hr>
-            <p>Este cuarto libro inicia la maduración de la saga, pensando tal vez en el crecimiento de los lectores, ademas cuenta con la competición que le da un ritmo ameno respecto a los anteriores libros. Que buen ritmo para contar la historia tiene la autora para no hacerlo pesado.</p>
-            <small class="text-muted">Subido por Anonimo el 3/1/17</small>
-            <hr>
+            <?php 
+             $cantidad = 1;
+             foreach ($a_multi_comentarios as $indice => $a_comentario) {
+                 if ($a_comentario['id_producto'] == $_GET['id']) {
+                     $cantidad++; ?>
+                     <p><?php echo $a_comentario['comentario'];?></p>
+                     <small class="text-muted">Comentado por <?php echo $a_comentario['mail']; ?></small>
+                     <br>
+                     <small class="text-muted">Valoracion <?php echo valoracionComentario($a_comentario['valoracion']);?></small>
+                     <hr>
+                     <?php
+                     if ($cantidad > 3) {
+                         break;
+                     }
+                 }
+               }
+            ?>
+            
             <?php
-              require_once("includes/modal.php")
+            require_once("includes/modal.php")
             ?>
           </div>
         </div>
