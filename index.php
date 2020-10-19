@@ -29,27 +29,41 @@ require_once("includes/head.php");
             <div class="col-lg-10 m-auto">
                 <!--  <h2 class="mb-4 text-warning">Productos destacados</h2> -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 producto">
-                       
-                            <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/alfaguara2.jpg"><span class="badge badge-danger destacado">NOVEDAD</span></a>
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="detallesProducto.php">Lo mucho que te ame</a>
-                                </h4>
-                                <h5>$899</h5>
-                                <p class="card-text">Creo que si alguien supiese la historia de mi vida la vería como una vida mal vivida, llena de secretos...</p>
+
+                    <?php
+                    $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
+                    $a_multi_comentario = json_decode(file_get_contents('json/comentarios.json'), true);
+                    require_once("includes/func/funciones.php");
+
+                    foreach ($a_multi_productos as $a_producto) {
+                        if ($a_producto['destacado'] == true) {
+                    ?>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100 producto">
+                                    <?php echo "<a href='detallesProducto.php?id={$a_producto['id_producto']}'" ?>><img class="card-img-top" src="<?php echo $a_producto['url']; ?>" alt="<?php echo $a_producto['nombre']; ?>"><span class="badge badge-danger destacado">NOVEDAD</span></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <?php echo "<a href='detallesProducto.php?id={$a_producto['id_producto']}'" ?>><?php echo $a_producto['nombre']; ?></a>
+                                        </h4>
+                                        <h5><?php echo $a_producto['precio']; ?></h5>
+                                        <p class="card-text"><?php echo $a_producto['descripcion_corta']; ?></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small><?php echo muestraEstrellas($a_multi_comentario, 'id_producto', $a_producto['id_producto']); ?></small>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    }
+
+
+                    ?>
 
 
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!-- <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100 producto">
                        
                             <a href="detallesProducto.php"><img class="card-img-top" src="img/miniaturas/salamandra1.jpg" alt=""><span class="badge badge-danger destacado">NOVEDAD</span></a>
@@ -132,11 +146,11 @@ require_once("includes/head.php");
                             <div class="card-footer">
                                 <small>&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                             </div>
-                        </div>
-                    </div>
-
+                        </div> -->
                 </div>
+
             </div>
+        </div>
         </div>
     </section>
     <!-- fin productos destacados -->
