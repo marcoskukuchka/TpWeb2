@@ -61,9 +61,5 @@
             </div>
         </nav>
 
-        <?php
-        /* <span class="sr-only">(current)</span> */
-        /* $active = 'active'; */
-       /*  echo $pagina; */
-        ?>
+     
     </header>

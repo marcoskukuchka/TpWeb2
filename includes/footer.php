@@ -7,7 +7,7 @@
                     <h5>Integrantes Grupo 5</h5>
                     <p>Lopez Sosa Sebastian Gabriel <br> Montes de Oca Romina Desiree <br> Kukuchka Marcos Jeremias.</p>
                     <h6>Repositorio</h6>
-                    <a href="https://github.com/marcoskukuchka/TpPHP.git"><i class="fab fa-github"> </i> GitHub </a>
+                    <a href="https://github.com/marcoskukuchka/TpWeb2.git" target="_blank"><i class="fab fa-github"> </i> GitHub </a>
                 </div>
 
                 <div class="col-sm text-center">
