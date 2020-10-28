@@ -1,5 +1,6 @@
 <div class="row">
 <?php
+$pagina = 'detalles';
 $a_multi_comentario = json_decode(file_get_contents('./json/comentarios.json'), true);
 require_once("includes/func/funciones.php");
 

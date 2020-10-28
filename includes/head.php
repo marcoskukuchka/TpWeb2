@@ -26,7 +26,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <script src="https://kit.fontawesome.com/cedf025736.js" crossorigin="anonymous"></script>
-    <title>El Bardo Inmortal -Libreria-</title>
+    <title>El Bardo Inmortal - <?php echo $pagina; ?> - </title>
 </head>
 
 <body class="fondo">
@@ -46,17 +46,24 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i><span class="sr-only">(current)</span></a>
+                    <li <?php echo (($pagina == 'Inicio') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
+                        <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i></a>
+                        
                     </li>
-                    <li class="nav-item">
+                    <li <?php echo (($pagina === 'Productos') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i></a>
                     </li>
-                    <li class="nav-item">
+                    <li  <?php echo (($pagina === 'Contacto') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
                     </li>
                 </ul>
 
             </div>
         </nav>
+
+        <?php
+        /* <span class="sr-only">(current)</span> */
+        /* $active = 'active'; */
+       /*  echo $pagina; */
+        ?>
     </header>

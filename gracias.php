@@ -1,4 +1,5 @@
 <?php
+$pagina = 'Gracias';
 require_once("includes/head.php");
 ?>
 <!-- fin nav -->

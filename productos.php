@@ -1,5 +1,8 @@
 <?php
+$pagina = 'Productos';
 require_once("includes/head.php");
+
+
 ?>
 <!-- Fin Navegacion -->
 

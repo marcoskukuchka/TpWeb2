@@ -1,4 +1,5 @@
 <?php
+$pagina = 'Detalles';
 require_once("includes/head.php");
 ?>
 <!-- Fin Navegacion -->
@@ -22,7 +23,6 @@ require_once("includes/head.php");
       $a_producto = $a_multi_productos[$id_libro];
       $a_editorial = $a_multi_editorial[$a_producto['id_editorial']];
       $a_genero = $a_multi_genero[$a_producto['id_genero']];
-      
 
      
       ?>

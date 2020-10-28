@@ -1,5 +1,8 @@
 <?php
+$pagina = 'Contacto';
 require_once("includes/head.php");
+
+
 ?>
 <!-- fin nav -->
 
