@@ -1,6 +1,7 @@
 <?php
 $pagina = 'Gracias';
 require_once("includes/head.php");
+
 ?>
 <!-- fin nav -->
 
@@ -29,9 +30,12 @@ require_once("includes/head.php");
                   <div class="alert alert-success" role="alert">
                         <div class="text-center">
                               <h4 class="alert-heading">¡Muchas Gracias!</h4>
-                              <p>LLenaste correctamente el formulario y llego a nuestra casilla. Este fue el primer paso para resolver tus dudas...</p>
+                              <p>Llenaste correctamente el formulario y llego a nuestra casilla. Este fue el primer paso para resolver tus dudas...</p>
                               <hr>
-                              <p>En breve nos pondremos en contacto con vos..</p>
+                              <p>En breve nos pondremos en contacto con vos..
+                              <?php
+echo $_POST['email'];
+?></p>
 
                               <button type="button" class="btn btn-outline-dark">
                                     <a href="index.php" class="text-success">Volver a inicio</a> </button>

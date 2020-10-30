@@ -3,6 +3,7 @@ $pagina = 'Contacto';
 require_once("includes/head.php");
 
 
+
 ?>
 <!-- fin nav -->
 
@@ -25,7 +26,7 @@ require_once("includes/head.php");
   <section>
     <div class="container col-lg-6 mt-5 pt-5 pb-5">
       <h2 class="text-uppercase display-4 text-white sombra">Contactenos</h2>
-      <form action="guardaDatos.php" method="POST">
+      <form action="envio.php" method="POST">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label class="colorlbl" for="Nombre">Nombre:</label>
@@ -52,7 +53,7 @@ require_once("includes/head.php");
         <div class="form-row">
         <div class="col-md-6">
             <label class="colorlbl" for="Asunto"></label>
-            <input type="Nombre" class="form-control" id="Nombre" placeholder="Asunto" required>
+            <input type="Asunto" class="form-control" id="Asunto" placeholder="Asunto" required>
           </div>
           <div class="col-md-6">
 
@@ -74,7 +75,7 @@ require_once("includes/head.php");
 
         <div class="">
           <button type="reset" class="btn btn-secondary mr-3"><a href='contacto.php' class="text-white">Limpiar</a></button>
-          <button type="submit" class="btn btn-warning"><a href='gracias.php' class="text-dark"> Enviar</a></button>
+          <button type="submit" class="btn btn-warning" id="Enviar"><a href='gracias.php' class="text-dark"> Enviar</a></button>
         </div>
       </form>
 
@@ -83,6 +84,7 @@ require_once("includes/head.php");
   </section>
 
 </main>
+
 
 
 <!-- footer  -->
