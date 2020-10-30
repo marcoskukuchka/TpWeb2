@@ -8,7 +8,7 @@
     <?php
     require_once("func/funciones.php");
 
-    /* $ESTE_ARCHIVO  = 'ejemplo.php'; */
+  
 
     // Analizo los parámetros de invocación a esta página
     if (isset($_REQUEST['id_editorial']))
