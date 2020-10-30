@@ -45,5 +45,5 @@ if(!$mail->Send())
 }
 
 echo "Message has been sent";
-echo $_REQUEST['Nombre'];
+echo $mail->FromName;
 ?> 

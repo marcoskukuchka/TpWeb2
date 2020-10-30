@@ -26,11 +26,11 @@ require_once("includes/head.php");
   <section>
     <div class="container col-lg-6 mt-5 pt-5 pb-5">
       <h2 class="text-uppercase display-4 text-white sombra">Contactenos</h2>
-      <form action="envio.php" method="POST">
+      <form action="gracias.php" method="POST">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label class="colorlbl" for="Nombre">Nombre:</label>
-            <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" required>
+            <input type="Nombre" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre" required>
           </div>
           <div class="form-group col-md-6">
             <label class="colorlbl" for="inputapellido">Apellido:</label>
