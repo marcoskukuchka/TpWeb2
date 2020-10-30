@@ -75,7 +75,7 @@ require_once("includes/head.php");
 
         <div class="">
           <button type="reset" class="btn btn-secondary mr-3"><a href='contacto.php' class="text-white">Limpiar</a></button>
-          <button type="submit" class="btn btn-warning" id="Enviar"><a href='gracias.php' class="text-dark"> Enviar</a></button>
+          <button type="submit" class="btn btn-warning" action="envio.php" id="Enviar"><a href='gracias.php' class="text-dark"> Enviar</a></button>
         </div>
       </form>
 
