@@ -60,10 +60,10 @@ require_once("includes/head.php");
             <label class="colorlbl" for="Asunto"><span></span></label>
             <select class="custom-select" id="Area" name="Area" required>
               <option selected disabled value="">Para:</option>
-              <option value="Productos destacados">ventas@elbardo.com.ar</option>
-              <option value="Alfaguara">info@elbardo.com.ar</option>
-              <option value="Anagrama">pedidos@elbardo.com.ar</option>
-              <option value="Planeta">reclamos@elbardo.com.ar</option>
+              <option value="Ventas">ventas@elbardo.com.ar</option>
+              <option value="Info">info@elbardo.com.ar</option>
+              <option value="Pedidos">pedidos@elbardo.com.ar</option>
+              <option value="Reclamos">reclamos@elbardo.com.ar</option>
             </select>
             
           </div>

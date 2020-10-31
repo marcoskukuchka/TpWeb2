@@ -25,9 +25,9 @@ $mail->Password = "Sebastian1234"; // SMTP password
 $mail->From = "sebastiang.lopez@davinci.edu.ar";
 $mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
 
-$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", $destinatario);        // destinatario
+$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", $_REQUEST['Area']);        // destinatario
 
-$mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']."".$_REQUEST['Apellido']);    // responder a
+$mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']." ".$_REQUEST['Apellido']);    // responder a
 
 $mail->Port       = 587;
 //Definmos la seguridad como TLS
