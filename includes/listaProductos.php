@@ -21,10 +21,10 @@ require_once("includes/func/funciones.php");
 
     <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
-            <a href="detallesProducto.php?id=<?php echo $id_prod; ?>"><img class="card-img-top"  src="<?php echo $img;?>" alt="<?php echo $nombre;?>"></a>
+            <a href="detallesProducto.php?id=<?php echo $id_prod ?>"><img class="card-img-top"  src="<?php echo $img?>" alt="<?php echo $nombre?>"></a>
             <div class="card-body">
                 <h4 class="card-title">
-                <a href="detallesProducto.php?id=<?php echo $id_prod;?>"><?php echo $nombre?></a>
+                <a href="detallesProducto.php?id=<?php echo $id_prod?>"><?php echo $nombre?></a>
                 </h4>
                 <h5><?php echo $precio;?></h5>
                 <p class="card-text"><?php echo $descripcion?></p>
