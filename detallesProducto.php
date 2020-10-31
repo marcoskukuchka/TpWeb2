@@ -25,7 +25,15 @@ require_once("includes/head.php");
       $a_editorial = $a_multi_editorial[$a_producto['id_editorial']];
       $a_genero = $a_multi_genero[$a_producto['id_genero']];
 
-     
+      /* Variables aux para la descripcion del producto */
+      $titulo = $a_producto['nombre'];
+      $precio = $a_producto['precio'];
+      $editorial = $a_editorial['nombre'];
+      $genero = $a_genero['nombre'];
+      $descripcion = $a_producto['descripcion_larga'];
+      $estrellas = muestraEstrellas($a_multi_comentarios,'id_producto', $a_producto['id_producto']);
+      
+      
       ?>
 
 
@@ -35,13 +43,13 @@ require_once("includes/head.php");
         <div class="card mt-4">
           <img class="card-img-top img-fluid" src="img/banner/harry_potter_banner.png" alt="">
           <div class="card-body">
-            <h3 class="card-title"><?php echo $a_producto['nombre']; ?></h3>
-            <h4 class="pb-1"><?php echo $a_producto['precio']; ?></h4>
-            <h5 class="pb-1">Editorial: <?php echo $a_editorial['nombre'] ?></h5>
-            <h5 class="pb-1">Género Literario: <?php echo $a_genero['nombre'] ?></h5>
-            <p class="card-text"><?php echo $a_producto['descripcion_larga'] ?></p>
+            <h3 class="card-title"><?php echo $titulo; ?></h3>
+            <h4 class="pb-1"><?php echo $precio; ?></h4>
+            <h5 class="pb-1">Editorial: <?php echo $editorial;?></h5>
+            <h5 class="pb-1">Género Literario: <?php echo $genero?></h5>
+            <p class="card-text"><?php echo $descripcion; ?></p>
             <p class="font-weight-bold">Valoracion general</p>
-            <span class="text-warning"><?php echo muestraEstrellas($a_multi_comentarios,'id_producto', $a_producto['id_producto']);?></span>
+            <span class="text-warning"><?php echo $estrellas?></span>
             
           </div>
         </div>
@@ -54,13 +62,21 @@ require_once("includes/head.php");
           <div class="card-body">
             <?php 
              $cantidad = 1;
+             
+
              foreach ($a_multi_comentarios as $indice => $a_comentario) {
                  if ($a_comentario['id_producto'] == $_GET['id']) {
-                     $cantidad++; ?>
-                     <p><?php echo $a_comentario['comentario'];?></p>
-                     <small class="text-muted">Comentado por <?php echo $a_comentario['mail']; ?></small>
+                     $cantidad++; 
+                     /* Variables aux para los comentarios */
+                     $comentario = $a_comentario['comentario']; 
+                     $mail = $a_comentario['mail'];
+                     $valoracion = valoracionComentario($a_comentario['valoracion']);
+                     
+                     ?>
+                     <p><?php echo $comentario; ?></p>
+                     <small class="text-muted">Comentado por <?php echo $mail ?></small>
                      <br>
-                     <small class="text-muted">Valoracion <?php echo valoracionComentario($a_comentario['valoracion']);?></small>
+                     <small class="text-muted">Valoracion <?php echo $valoracion;?></small>
                      <hr>
                      <?php
                      if ($cantidad > 3) {
