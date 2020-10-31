@@ -34,7 +34,7 @@
 
     <div>
 
-        <form action="" method="get">
+        <form action="productos.php" method="get">
             <!-- buscador editoriales -->
             <ul class="list-group pt-5">
                 <h3>Editoriales</h3>

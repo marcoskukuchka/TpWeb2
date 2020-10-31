@@ -12,7 +12,7 @@ require_once("includes/head.php");
 
     <div class="row">
       <?php
-      require_once("includes/aside1.php");
+      require_once("includes/aside.php");
       require_once("includes/func/funciones.php");
       $id_libro = $_REQUEST['id'];
       
