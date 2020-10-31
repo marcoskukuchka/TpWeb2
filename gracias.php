@@ -24,7 +24,8 @@ $mail->Password = "Sebastian1234"; // SMTP password
 
 $mail->From = "sebastiang.lopez@davinci.edu.ar";
 $mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
-$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", "destinatario");        // destinatario
+
+$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", $destinatario);        // destinatario
 
 $mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']."".$_REQUEST['Apellido']);    // responder a
 
@@ -38,7 +39,7 @@ $mail->WordWrap = 50;     // set word wrap to 50 characters
 $mail->IsHTML(true);     // set email
 
 $mail->Subject = $_REQUEST['Asunto'];
-$mail->Body    = $_REQUEST['Mensaje'];
+$mail->Body    = $_REQUEST['mail']." ".$_REQUEST['Mensaje'];
 $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
 
 
