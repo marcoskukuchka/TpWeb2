@@ -218,7 +218,6 @@ $a_multi_productos = array (
                 'id_editorial' => 1,
                 'id_genero' => 2,
                 'destacado' => false,
-                'url' => 'img/miniaturas/planeta4.jpg',
                 )
                 
 );
