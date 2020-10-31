@@ -9,22 +9,26 @@ require_once("includes/func/funciones.php");
        ( ( in_array($a_producto['id_genero'],$id_genero) || empty($id_genero) )))
        
     {
-
-
+        $url = "<a href='detallesProducto.php?id={$a_producto['id_producto']}'>";
+        $textoAlt = $a_producto['nombre'];
+        $precio = $a_producto['precio'];
+        $nombre = $a_producto['nombre'];
+        $descripcion = cortar_palabras($a_producto['descripcion_larga'], 70);
+        $totalEstrellas = muestraEstrellas($a_multi_comentario,'id_producto', $a_producto['id_producto']);
 ?>
 
     <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
-            <?php echo "<a href='detallesProducto.php?id={$a_producto['id_producto']}'"?>><img class="card-img-top"  src="<?php echo $a_producto['url'];?>" alt="<?php echo $a_producto['nombre'];?>"></a>
+            <?php echo $url ?><img class="card-img-top"  src="<?php echo $a_producto['url'];?>" alt="<?php echo $textoAlt?>"></a>
             <div class="card-body">
                 <h4 class="card-title">
-                <?php echo "<a href='detallesProducto.php?id={$a_producto['id_producto']}'"?>><?php echo $a_producto['nombre'];?></a>
+                <?php echo $url?><?php echo $nombre?></a>
                 </h4>
-                <h5><?php echo $a_producto['precio'];?></h5>
-                <p class="card-text"><?php echo $a_producto['descripcion_corta'];?></p>
+                <h5><?php echo $precio;?></h5>
+                <p class="card-text"><?php echo $descripcion?></p>
             </div>
             <div class="card-footer">
-                <small><?php echo muestraEstrellas($a_multi_comentario,'id_producto', $a_producto['id_producto']);?></small>
+                <small><?php echo $totalEstrellas?></small>
             </div>
         </div>
     </div>
