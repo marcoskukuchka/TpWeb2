@@ -34,13 +34,13 @@ require_once("includes/head.php");
           </div>
           <div class="form-group col-md-6">
             <label class="colorlbl" for="inputapellido">Apellido:</label>
-            <input type="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
+            <input type="apellido" class="form-control" name= "Apellido" id="apellido" placeholder="Apellido" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6 ">
             <label class="colorlbl" for="inputAddress">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="Direccion de email">
+            <input type="email" class="form-control" name = "mail" id="email" placeholder="Direccion de email">
           </div>
 
           <div class="form-group col-md-6">
@@ -53,7 +53,7 @@ require_once("includes/head.php");
         <div class="form-row">
         <div class="col-md-6">
             <label class="colorlbl" for="Asunto"></label>
-            <input type="Asunto" class="form-control" id="Asunto" placeholder="Asunto" required>
+            <input type="Asunto" class="form-control" name = "Asunto" id="Asunto" placeholder="Asunto" required>
           </div>
           <div class="col-md-6">
 
@@ -74,8 +74,8 @@ require_once("includes/head.php");
         </div>
 
         <div class="">
-          <button type="reset" class="btn btn-secondary mr-3"><a href='contacto.php' class="text-white">Limpiar</a></button>
-          <button type="submit" class="btn btn-warning" action="envio.php" id="Enviar"><a href='gracias.php' class="text-dark"> Enviar</a></button>
+          <button type="reset" class="btn btn-secondary mr-3" action="contacto.php"> Limpiar</a></button>
+          <button type="submit" class="btn btn-warning" id="Enviar"> Enviar</button>
         </div>
       </form>
 
