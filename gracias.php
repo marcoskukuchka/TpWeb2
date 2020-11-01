@@ -1,6 +1,9 @@
 <?php
 $pagina = 'Gracias';
 require_once("includes/head.php");
+require_once('envio.php');
+
+
 ?>
 <!-- fin nav -->
 
@@ -28,17 +31,16 @@ require_once("includes/head.php");
             <div class=" col-lg-6 col-md-6 mx-auto mt-5 pb-5">
                   <div class="alert alert-success" role="alert">
                         <div class="text-center">
-                              <h4 class="alert-heading">¡Muchas Gracias!</h4>
-                              <p>LLenaste correctamente el formulario y llego a nuestra casilla. Este fue el primer paso para resolver tus dudas...</p>
+                              <h4 class="alert-heading"><?php echo "¡Muchas Gracias " .$_REQUEST['Nombre']."!"?></h4>
+                              <p>Llenaste correctamente el formulario y llego a nuestra casilla. Este fue el primer paso para resolver tus dudas...</p>
                               <hr>
-                              <p>En breve nos pondremos en contacto con vos..</p>
+                              <p>En breve nos pondremos en contacto con vos!</p>
 
-                              <button type="button" class="btn btn-outline-dark">
-                                    <a href="index.php" class="text-success">Volver a inicio</a> </button>
+                              <button type="button" class="btn btn-outline-dark" action = "index.php" class="text-success">
+                                    Volver a inicio</button>
 
-                              <button type="button" class="btn btn-outline-dark">
-                                    <a href="productos.php" class="text-success"> Seguir mirando</a>
-                              </button>
+                              <button type="button" class="btn btn-outline-dark" action = "productos.php" class="text-success">
+                                     Seguir mirando </button>
                         </div>
                   </div>
             </div>
@@ -51,3 +53,4 @@ require_once("includes/head.php");
 <?php
 require_once("includes/footer.php");
 ?>
+

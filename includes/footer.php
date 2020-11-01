@@ -21,6 +21,7 @@
                         </div>
                         <button type="submit" value="guardar" class="mb-2 btn-block btn-warning">Suscribirme</button>
                     </form>
+
                     <?php 
              
                     if (isset($_REQUEST['email'])){
@@ -29,6 +30,7 @@
                     }
 
                     ?>
+
 
 
                 </div>
