@@ -13,14 +13,24 @@
                 <div class="col-sm text-center">
                     <h4>Recibi las novedades</h4>
 
-                    <form>
+                    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
                         <div class="form-group">
                             <label for="inputAddress"></label>
-                            <input type="email" class="form-control" id="email" placeholder="Direccion de email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button type="submit" class="mb-2 btn-block btn-warning"><a href='gracias.php' class="text-dark font-weight-bold">Suscribirme</a></button>
+                        <button type="submit" value="guardar" class="mb-2 btn-block btn-warning">Suscribirme</button>
                     </form>
+                    <?php 
+             
+                    if (isset($_REQUEST['email'])){
+                    $agregar = $_REQUEST['email']. ' ';
+                    file_put_contents('json/email.json', $agregar, FILE_APPEND);
+                    }
+
+                    ?>
+
+
                 </div>
                 
                 <div class="col-sm text-center">
