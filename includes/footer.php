@@ -22,7 +22,7 @@
                         <button type="submit" class="mb-2 btn-block btn-warning"><a href='gracias.php' class="text-dark font-weight-bold">Suscribirme</a></button>
                     </form>
                 </div>
-
+                
                 <div class="col-sm text-center">
                     <h5>En cada minuto hay muchos días, aprovechalos con un libro</h5>
                     <p>El Bardo inmortal es una libreria donde podes encontrar todo lo que quieras leer... si no lo tenemos, ¡te lo conseguimos!</p>
