@@ -21,20 +21,20 @@
                         </div>
                         <button type="submit" value="guardar" class="mb-2 btn-block btn-warning">Suscribirme</button>
                     </form>
-                </div>
-               <?php 
+
+                    <?php 
              
-                if (isset($_REQUEST['email'])){
-                    $agregar = $_REQUEST['email'];
-                }
+                    if (isset($_REQUEST['email'])){
+                    $agregar = $_REQUEST['email']. ' ';
+                    file_put_contents('json/email.json', $agregar, FILE_APPEND);
+                    }
 
-                $mail_antiguos = file_get_contents('json/mails.json');
-                $temp = json_decode($mail_antiguos);
-                $temp_array[] = $agregar;
-                $jsonData = json_encode($temp_array);
-                file_put_contents('json/mails.json', $jsonData); 
-               ?>
+                    ?>
 
+
+
+                </div>
+                
                 <div class="col-sm text-center">
                     <h5>En cada minuto hay muchos días, aprovechalos con un libro</h5>
                     <p>El Bardo inmortal es una libreria donde podes encontrar todo lo que quieras leer... si no lo tenemos, ¡te lo conseguimos!</p>

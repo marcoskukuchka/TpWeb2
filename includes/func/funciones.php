@@ -79,3 +79,17 @@ function valoracionComentario($valor_buscado){
     return $estrellas;
 }
 
+
+/* cortar descripciones */
+
+function cortar_palabras($texto, $limite, $break=' ', $pad='...'){
+	if(strlen($texto) <= $limite)
+		return $texto;
+	$quiebre = strpos($texto, $break, $limite);
+	if( $quiebre != false){
+		if($quiebre < (strlen($texto) - 1)){
+			$texto = substr($texto, 0, $quiebre).$pad;
+		}
+	}
+	return $texto;
+}
