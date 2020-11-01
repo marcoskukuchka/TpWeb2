@@ -19,10 +19,11 @@ $mail->Username = "sebastiang.lopez@davinci.edu.ar";  // SMTP username
 $mail->Password = "Sebastian1234"; // SMTP password
 
 $mail->From = "sebastiang.lopez@davinci.edu.ar";
-$mail->FromName = $_REQUEST['Nombre'];        // remitente
-$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", "destinatario");        // destinatario
+$mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
 
-$mail->AddReplyTo("sebastiang.lopez@davinci.edu.ar", "respuesta a");    // responder a
+$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", $_REQUEST['Area']);        // destinatario
+
+$mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']." ".$_REQUEST['Apellido']);    // responder a
 
 $mail->Port       = 587;
 //Definmos la seguridad como TLS
@@ -33,9 +34,12 @@ $mail->SMTPAuth   = true;
 $mail->WordWrap = 50;     // set word wrap to 50 characters
 $mail->IsHTML(true);     // set email
 
-$mail->Subject = "Asunto .....";
-$mail->Body    = "This is the HTML message body <b>in bold!</b>";
+$mail->Subject = $_REQUEST['Asunto'];
+$mail->Body    = $_REQUEST['mail']." ".$_REQUEST['Mensaje'];
 $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+
+
+
 
 if(!$mail->Send())
 {
@@ -45,5 +49,9 @@ if(!$mail->Send())
 }
 
 echo "Message has been sent";
-echo $mail->FromName;
+
+
+$a_contactos[date('YmdHisU')] = array('fecha' => date('d-m-Y H:i:s'), 'nombre' => $_REQUEST['Nombre'],'apellido' => $_REQUEST['Apellido'],'telefono' => $_REQUEST['telefono'], 'mail'=>$_REQUEST['mail'],'asunto'=>$_REQUEST['Asunto'],'mensaje'=>$_REQUEST['Mensaje'], 'sector' => $_REQUEST['Area']);
+
+file_put_contents('json/$a_contactos.json', json_encode($a_contactos), FILE_APPEND);
 ?> 

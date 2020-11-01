@@ -45,7 +45,7 @@ require_once("includes/head.php");
 
           <div class="form-group col-md-6">
             <label class="colorlbl" for="Telefono">Teléfono:</label>
-            <input type="number" class="form-control" id="Telefono" placeholder="Telefono" max="99999999999999">
+            <input type="number" class="form-control" name= 'telefono' id="Telefono" placeholder="Telefono" max="99999999999999">
           </div>
         </div>
         
