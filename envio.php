@@ -51,9 +51,11 @@ if(!$mail->Send())
 echo "Message has been sent";
 
 
-// original  $a_contactos[date('YmdHisU')] = array('fecha' => date('d-m-Y H:i:s'), 'nombre' => $_REQUEST['Nombre'],'apellido' => $_REQUEST['Apellido'],'telefono' => $_REQUEST['telefono'], 'mail'=>$_REQUEST['mail'],'asunto'=>$_REQUEST['Asunto'],'mensaje'=>$_REQUEST['Mensaje'], 'sector' => $_REQUEST['Area']);
-// primera copia  $a_contactos = [date('YmdHisU')] => array('fecha' => date('d-m-Y H:i:s'), 'nombre' => $_REQUEST['Nombre'],'apellido' => $_REQUEST['Apellido'],'telefono' => $_REQUEST['telefono'], 'mail'=>$_REQUEST['mail'],'asunto'=>$_REQUEST['Asunto'],'mensaje'=>$_REQUEST['Mensaje'], 'sector' => $_REQUEST['Area']);
-$a_contactos += [date('YmdHisU')=> array('fecha' => date('d-m-Y H:i:s'), 'nombre' => $_REQUEST['Nombre'],'apellido' => $_REQUEST['Apellido'],'telefono' => $_REQUEST['telefono'], 'mail'=>$_REQUEST['mail'],'asunto'=>$_REQUEST['Asunto'],'mensaje'=>$_REQUEST['Mensaje'], 'sector' => $_REQUEST['Area'])];
+$contenido = file_get_contents('json/a_contactos.json'); //carga archivo json
+$contenido_decodificado = json_decode($contenido, true);  //crea un array para php
+$a_contactos = array('fecha' => date('d-m-Y H:i:s'), 'nombre' => $_REQUEST['Nombre'],'apellido' => $_REQUEST['Apellido'],'telefono' => $_REQUEST['telefono'], 'mail'=>$_REQUEST['mail'],'asunto'=>$_REQUEST['Asunto'],'mensaje'=>$_REQUEST['Mensaje'], 'sector' => $_REQUEST['Area']);
+$contenido_decodificado[date('YmdHisU')] = $a_contactos; //agrega contenido
+$js = json_encode($contenido_decodificado);
 
-file_put_contents('json/$a_contactos.json', json_encode($a_contactos), FILE_APPEND);
+file_put_contents('json/a_contactos.json', $js);
 ?> 
