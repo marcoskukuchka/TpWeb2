@@ -34,8 +34,8 @@ require_once('agregar_comentarios.php');
                               <h4 class="alert-heading">¡Muchas gracias por dejar tu comentario!</h4>
                               <p>Ahora podes seguir buscando tu próxima aventura en forma de libro</p>
 
-                              <div class=row text-center>
-                                    <form action="index.php">
+                              <div class= " row justify-content-center">
+                                    <form class="pr-2" action="index.php">
                                           <button type="submit" class="btn btn-outline-dark" action="index.php" class="text-success">
                                                 Volver a inicio</button>
                                     </form>
