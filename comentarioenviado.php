@@ -19,7 +19,7 @@ require_once('agregar_comentarios.php');
                   <h1 class="pt-5 titulo text-uppercase display-3">El Bardo Inmortal</h1>
 
                   <blockquote class="blockquote">
-                        <p class="mb-0 text-white">"El hombre arruinado lee su condición en los ojos de los demás con tanta rapidez que él mismo siente su caída."</p>
+                        <p class="mb-0 text-white">"Presta el oído a todos, y a pocos la voz. Escucha las censuras de los demás; pero reserva tu propia opinión."</p>
                         <p class="blockquote-footer text-white ml-5 pl-5 pt-2 text-right"> <cite title="Source Title"> William Shakespeare </cite></p>
                   </blockquote>
             </div>
@@ -31,10 +31,8 @@ require_once('agregar_comentarios.php');
             <div class=" col-lg-6 col-md-6 mx-auto mt-5 pb-5">
                   <div class="alert alert-success" role="alert">
                         <div class="text-center">
-                              <h4 class="alert-heading"><?php echo "¡Muchas Gracias " .$_REQUEST['Nombre']."!"?></h4>
-                              <p>Llenaste correctamente el formulario y llego a nuestra casilla. Este fue el primer paso para resolver tus dudas...</p>
-                              <hr>
-                              <p>En breve nos pondremos en contacto con vos!</p>
+                              <h4 class="alert-heading">¡Muchas gracias por dejar tu comentario!</h4>
+                              <p>Ahora podes seguir buscando tu próxima aventura en forma de libro</p>
 
                               <button type="button" class="btn btn-outline-dark" action = "index.php" class="text-success">
                                     Volver a inicio</button>

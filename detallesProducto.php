@@ -65,6 +65,7 @@ require_once("includes/head.php");
             <?php 
              $cantidad = 1;
              
+              rsort($a_multi_comentarios);
 
              foreach ($a_multi_comentarios as $indice => $a_comentario) {
                  if ($a_comentario['id_producto'] == $_GET['id']) {
@@ -93,15 +94,9 @@ require_once("includes/head.php");
                         <label for="recipient-name" class="col-form-label">e-mail</label>
                         <input type="email" class="form-control" name = "mail" id="email" placeholder="Direccion de email">
                     </div>
-
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">NO TOCAR</label>
-                        <input type="idlibro" class="form-control" name = "<?php $id_banner?>" id="banner" placeholder="Direccion de email">
-                    </div>
-
-
-
-
+                    
+                    <input type="hidden" disable = "disable" class="form-control" name = "banner" value = <?php echo $id_banner; ?> id="banner">
+                    
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Reseña:</label>
                         <textarea class="form-control" name= "comentario" id="message-text"></textarea>
@@ -109,7 +104,7 @@ require_once("includes/head.php");
                    
                         <label for="Asunto">Calificación</label>
                         <select class="custom-select mb-3" name = "valoracion" id="Valoracion" required>
-                            <option selected disabled value=5><span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9733;</span></option>
+                            <option selected value=5><span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9733;</span></option>
                             <option value="4"><span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span></option>
                             <option value="3"><span class="text-warning">&#9733; &#9733; &#9733; &#9734; &#9734;</span></option>
                             <option value="2"><span class="text-warning">&#9733; &#9733; &#9734; &#9734; &#9734;</span></option>
