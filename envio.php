@@ -15,13 +15,13 @@ $mail->IsSMTP();   // set mailer to
 
 $mail->Host = 'smtp.gmail.com';  // specify main and backup server
 $mail->SMTPAuth = true;     // activa autenticacion SMTP
-$mail->Username = "elbardolibreria@dgmail.com";  // usuario SMTP
-$mail->Password = "tpdavincilibreria"; // contraseña SMTP
+$mail->Username = "sebastiang.lopez@davinci.edu.ar";  // usuario SMTP
+$mail->Password = ""; // contraseña SMTP
 
-$mail->From = "elbardolibreria@dgmail.com";
+$mail->From = "sebastiang.lopez@davinci.edu.ar";
 $mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
 
-$mail->AddAddress("elbardolibreria@dgmail.com", $_REQUEST['Area']);        // destinatario
+$mail->AddAddress("sebastiang.lopez@davinci.edu.ar", $_REQUEST['Area']);        // destinatario
 
 $mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']." ".$_REQUEST['Apellido']);    // responder a
 
