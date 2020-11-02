@@ -34,11 +34,18 @@ require_once('agregar_comentarios.php');
                               <h4 class="alert-heading">¡Muchas gracias por dejar tu comentario!</h4>
                               <p>Ahora podes seguir buscando tu próxima aventura en forma de libro</p>
 
-                              <button type="button" class="btn btn-outline-dark" action = "index.php" class="text-success">
-                                    Volver a inicio</button>
+                              <div class=row text-center>
+                                    <form action="index.php">
+                                          <button type="submit" class="btn btn-outline-dark" action="index.php" class="text-success">
+                                                Volver a inicio</button>
+                                    </form>
 
-                              <button type="button" class="btn btn-outline-dark" action = "productos.php" class="text-success">
-                                     Seguir mirando </button>
+                                    <form action="productos.php">
+
+                                          <button type="submit" class="btn btn-outline-dark" class="text-success">
+                                                Seguir mirando </button>
+                                    </form>
+                              </div>
                         </div>
                   </div>
             </div>
@@ -51,4 +58,3 @@ require_once('agregar_comentarios.php');
 <?php
 require_once("includes/footer.php");
 ?>
-
