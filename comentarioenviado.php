@@ -1,7 +1,7 @@
 <?php
 $pagina = 'Gracias';
 require_once("includes/head.php");
-require_once('agregar_comentarios.php');
+require_once('includes/agregar_comentarios.php');
 
 
 ?>

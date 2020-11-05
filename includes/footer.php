@@ -1,3 +1,7 @@
+<?php
+require_once("includes/modal.php");
+?>
+
 <footer>
     <div class="p-3 mb-2 fondofooter text-white">
         <div class="container">
@@ -13,21 +17,25 @@
                 <div class="col-sm text-center">
                     <h4>Recibi las novedades</h4>
 
-                    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
+                    <form  method="get" >
                         <div class="form-group">
                             <label for="inputAddress"></label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button type="submit" value="guardar" class="mb-2 btn-block btn-warning">Suscribirme</button>
+                        <button data-togle="modal" data-target="ventanaModal" type="submit" value="guardar" class="mb-2 btn-block btn-warning">Suscribirme</button>
                     </form>
 
                     <?php 
              
                     if (isset($_REQUEST['email'])){
-                    $agregar = $_REQUEST['email']. ' ';
-                    file_put_contents('json/email.json', $agregar, FILE_APPEND);
-                    }
+                        $contenido = file_get_contents('json/email.json'); //carga archivo json
+                        $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
+                        $a_email= array( 'email' => $_REQUEST['email']); //agrega nueva info al array
+                        $contenido_decodificado[date('YmdHisU')] = $a_email; //agrega contenido
+                        $js = json_encode($contenido_decodificado); //codifica nuevamente
+                        file_put_contents('json/email.json', $js); //agrega el contenido
+                    } 
 
                     ?>
 

@@ -1,10 +1,10 @@
 <?php
 
-$idlibro = $_REQUEST['id'];
+/* $idlibro = $_REQUEST['id']; */
 
 ?>
 
-<button class="btn btn-warning" data-toggle="modal" data-target="#ventanaModal">Dejar comentario</button>
+<!-- <button class="btn btn-warning" data-toggle="modal" data-target="#ventanaModal">Dejar comentario</button> -->
 
 
 <div class="modal" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
@@ -47,12 +47,12 @@ $idlibro = $_REQUEST['id'];
                         <?php
 
 
-$contenido = file_get_contents('json/comentarios.json'); //carga archivo json
+/* $contenido = file_get_contents('json/comentarios.json'); //carga archivo json
 $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
 $a_multi_comentarios = array( 'id_producto' => 1, 'mail'=> $_REQUEST['mail'],'comentario'=> $_REQUEST['comentario'], 'valoracion' => $_REQUEST['valoracion']); //agrega nueva info al array
 $contenido_decodificado[date('YmdHisU')] = $a_multi_comentarios; //agrega contenido
 $js = json_encode($contenido_decodificado); //codifica nuevamente
-file_put_contents('json/comentarios.json', $js); //agrega el contenido
+file_put_contents('json/comentarios.json', $js); //agrega el contenido */
 
 ?>
 
