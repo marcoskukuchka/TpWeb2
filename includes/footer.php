@@ -1,7 +1,3 @@
-<?php
-require_once("includes/modal.php");
-?>
-
 <footer>
     <div class="p-3 mb-2 fondofooter text-white">
         <div class="container">
@@ -17,15 +13,17 @@ require_once("includes/modal.php");
                 <div class="col-sm text-center">
                     <h4>Recibi las novedades</h4>
 
-                    <form  method="get" >
+                    <form class="mi-form" method="post" >
                         <div class="form-group">
                             <label for="inputAddress"></label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button data-togle="modal" data-target="ventanaModal" type="submit" value="guardar" class="mb-2 btn-block btn-warning">Suscribirme</button>
+                        <button type="submit"  value="guardar" class="mb-2 btn-block btn-warning" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                            Registrarse
+                        </button>
                     </form>
-
+                    
                     <?php 
              
                     if (isset($_REQUEST['email'])){
@@ -35,10 +33,10 @@ require_once("includes/modal.php");
                         $contenido_decodificado[date('YmdHisU')] = $a_email; //agrega contenido
                         $js = json_encode($contenido_decodificado); //codifica nuevamente
                         file_put_contents('json/email.json', $js); //agrega el contenido
+                        
                     } 
-
+                    
                     ?>
-
 
 
                 </div>
@@ -86,7 +84,7 @@ require_once("includes/modal.php");
         </div>
     </div>
 </footer>
-
+<script type='text/javascript' src="includes/func/func.js"> </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>

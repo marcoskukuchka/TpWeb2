@@ -1,4 +1,5 @@
 <?php
+
 $pagina = 'Inicio';
 require_once("includes/head.php");
 

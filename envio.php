@@ -16,7 +16,7 @@ $mail->IsSMTP();   // set mailer to
 $mail->Host = 'smtp.gmail.com';  // specify main and backup server
 $mail->SMTPAuth = true;     // activa autenticacion SMTP
 $mail->Username = "sebastiang.lopez@davinci.edu.ar";  // usuario SMTP
-$mail->Password = ""; // contraseña SMTP
+$mail->Password = "tpdavincilibreria"; // contraseña SMTP
 
 $mail->From = "sebastiang.lopez@davinci.edu.ar";
 $mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
