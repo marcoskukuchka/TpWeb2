@@ -26,8 +26,9 @@ span,
 a,
 label,
 input,
-textarea {
-    font-family: 'Ubuntu', sans-serif;
+textarea,
+.nav-link {
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .fondo-portada {

@@ -35,20 +35,20 @@
 
     <header>
         <nav class="container-fluid navbar navbar-icon-top navbar-expand-lg navbar-dark fondonav fixed-top ">
-            <a id="marca" class="navbar-brand" href="index.php"><img class="img-fluid logos" src="img/logoCabeza.png" alt="logo libreria"></a>
+            <a id="marca" class="navbar-brand" href="index.php"><img class="img-fluid logos" src="img/path2925.png" alt="logo libreria"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li <?php echo (($pagina == 'Inicio') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
-                        <a class="nav-link" href="index.php"><i class="fas fa-home"> Inicio </i></a>
+                        <a class="nav-link" href="index.php"><i class="fas fa-home mr-2"></i>Inicio</a>
                     </li>
                     <li <?php echo (($pagina === 'Productos') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
-                        <a class="nav-link" href="productos.php"><i class="fas fa-box-open"> Productos </i></a>
+                        <a class="nav-link" href="productos.php"><i class="fas fa-box-open mr-2"></i>Productos</a>
                     </li>
                     <li  <?php echo (($pagina === 'Contacto') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
-                        <a class="nav-link" href="contacto.php"><i class="fas fa-address-book"> Contacto </i></a>
+                        <a class="nav-link" href="contacto.php"><i class="fas fa-address-book mr-2"></i>Contacto</a>
                     </li>
                 </ul>
             </div>
