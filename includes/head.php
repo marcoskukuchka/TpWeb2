@@ -45,7 +45,7 @@
                         <a class="nav-link" href="index.php"><i class="fas fa-home mr-2"></i>Inicio</a>
                     </li>
                     <li <?php echo (($pagina === 'Productos') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
-                        <a class="nav-link" href="productos.php"><i class="fas fa-box-open mr-2"></i>Productos</a>
+                        <a class="nav-link" href="productos.php"><i class="fas fa-book mr-2"></i>Libros</a>
                     </li>
                     <li  <?php echo (($pagina === 'Contacto') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book mr-2"></i>Contacto</a>

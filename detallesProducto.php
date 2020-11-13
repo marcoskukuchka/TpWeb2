@@ -17,6 +17,8 @@ require_once("includes/head.php");
       require_once("includes/aside.php");
       require_once("includes/func/funciones.php");
       $id_libro = $_REQUEST['id'];
+
+      
       
       $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
       $a_multi_comentarios = json_decode(file_get_contents('json/comentarios.json'), true);
@@ -35,14 +37,14 @@ require_once("includes/head.php");
       $descripcion = $a_producto['descripcion_larga'];
       $estrellas = muestraEstrellas($a_multi_comentarios,'id_producto', $a_producto['id_producto']);
       $id_banner = $a_producto['id_producto'];
-      $banner = 'img\\productos\\'.$id_banner.'\\'.$id_banner.'_banner.jpg';
+      $banner = 'img\\productos\\'.$id_libro.'\\'.$id_libro.'_banner.jpg';
+
       ?>
 
 
 
       <div class="col-lg-9 col-md-8 ">
-
-        <div class="card mt-4">
+          <div class="card mt-4">
           <img class="card-img-top img-fluid" src="<?php echo $banner ?>" alt="<?php echo $titulo?>">
           <div class="card-body">
             <h3 class="card-title"><?php echo $titulo?></h3>
@@ -112,9 +114,7 @@ require_once("includes/head.php");
                         </select>
                     
                     <div class="mt-3">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">
-                            cerrar
-                        </button>
+                        
                         <button type="submit" class="btn btn-warning" type="button">
                             aceptar
                         </button>
