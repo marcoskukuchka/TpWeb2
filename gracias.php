@@ -35,12 +35,18 @@ require_once('envio.php');
                               <p>Llenaste correctamente el formulario y llego a nuestra casilla. Este fue el primer paso para resolver tus dudas...</p>
                               <hr>
                               <p>En breve nos pondremos en contacto con vos!</p>
-
-                              <button type="button" class="btn btn-outline-dark" action = "index.php" class="text-success">
-                                    Volver a inicio</button>
-
-                              <button type="button" class="btn btn-outline-dark" action = "productos.php" class="text-success">
-                                     Seguir mirando </button>
+                              <div class="d-flex justify-content-center">
+                                    <form class=" pr-2"action="index.php">
+                                          <button type="submit" class="btn btn-outline-dark"  class="text-success">
+                                                Volver a inicio</button>
+                                    </form>
+                                    <form action="productos.php">
+                                          <button type="submit" class="btn btn-outline-dark" class="text-success">
+                                                 Seguir mirando </button>
+                                    </form>
+                              
+                              </div>
+                              
                         </div>
                   </div>
             </div>
