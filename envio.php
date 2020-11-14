@@ -24,7 +24,7 @@ $mail->SMTPOptions = array(
 $mail->Host = 'smtp.gmail.com';  // specify main and backup server
 $mail->SMTPAuth = true;     // activa autenticacion SMTP
 $mail->Username = "elbardolibreria@gmail.com";  // usuario SMTP
-$mail->Password = "tpdavincilibreria"; // contraseña SMTP
+$mail->Password = "contraseña_XD"; // contraseña SMTP
 
 $mail->From = "elbardolibreria@gmail.com";
 $mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
