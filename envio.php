@@ -24,7 +24,7 @@ $mail->SMTPOptions = array(
 $mail->Host = 'smtp.gmail.com';  // specify main and backup server
 $mail->SMTPAuth = true;     // activa autenticacion SMTP
 $mail->Username = "elbardolibreria@gmail.com";  // usuario SMTP
-$mail->Password = "contraseña_XD"; // contraseña SMTP
+$mail->Password = "tpdavincilibreria"; // contraseña SMTP
 
 $mail->From = "elbardolibreria@gmail.com";
 $mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
@@ -43,7 +43,7 @@ $mail->WordWrap = 50;     // set word wrap to 50 characters
 $mail->IsHTML(true);     // set email
 
 $mail->Subject = $_REQUEST['Asunto'];
-$mail->Body    = $_REQUEST['mail']." ".$_REQUEST['Mensaje']."  -   ".$_REQUEST['Area'];
+$mail->Body    = $_REQUEST['mail']." ".$_REQUEST['Mensaje'];
 $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
 
 
