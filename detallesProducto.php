@@ -70,7 +70,7 @@ require_once("includes/head.php");
               rsort($a_multi_comentarios);
 
              foreach ($a_multi_comentarios as $indice => $a_comentario) {
-                 if ($a_comentario['id_producto'] == $_GET['id']) {
+                 if ($a_comentario['id_producto'] == $id_libro) {
                      $cantidad++; 
                      /* Variables aux para los comentarios */
                      $comentario = $a_comentario['comentario']; 

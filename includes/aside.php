@@ -39,20 +39,20 @@
             <ul class="list-group pt-5">
                 <h3>Editoriales</h3>
                 <?php
-                $i = 1;
+                $nombre_for = 1;
                 foreach ($a_multi_editorial as $a_editorial) {
                     if (in_array($a_editorial['id_editorial'], $id_editorial))
                         $checked = 'checked="chequed"';
                     else
                         $checked = '';
-                $i = $i + 1;
+                $nombre_for = $nombre_for + 1;
                 ?>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div class="custom-control custom-checkbox">
                             <?php
-                            echo '<input type="checkbox" class="custom-control-input" id="' . $i . '" name="id_editorial[]" value = "' . $a_editorial['id_editorial'] . '" ' . $checked . '>';
+                            echo '<input type="checkbox" class="custom-control-input" id="' . $nombre_for . '" name="id_editorial[]" value = "' . $a_editorial['id_editorial'] . '" ' . $checked . '>';
 
-                            echo '<label class="custom-control-label" for="' . $i . '">' . $a_editorial['nombre'] . '</label>';
+                            echo '<label class="custom-control-label" for="' . $nombre_for . '">' . $a_editorial['nombre'] . '</label>';
                             ?>
                         </div>
                        
@@ -69,21 +69,21 @@
             <ul class="list-group pt-5">
                 <h3>Generos</h3>
                 <?php
-                $i = 1;
+                $nombre_for = 1;
                 foreach ($a_multi_genero as $a_genero) {
                     if (in_array($a_genero['id_genero'], $id_genero))
                         $checked = 'checked="chequed"';
                     else
                         $checked = '';
-                    $i = $i + 10;
+                    $nombre_for = $nombre_for + 10;
                     
                 ?>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div class="custom-control custom-checkbox">
                             <?php
-                            echo '<input type="checkbox" class="custom-control-input" id="' . $i . '" name="id_genero[]" value = "' . $a_genero['id_genero'] . '" ' . $checked . '>';
+                            echo '<input type="checkbox" class="custom-control-input" id="' . $nombre_for . '" name="id_genero[]" value = "' . $a_genero['id_genero'] . '" ' . $checked . '>';
 
-                            echo '<label class="custom-control-label" for="' . $i . '">' . $a_genero['nombre'] . '</label>';
+                            echo '<label class="custom-control-label" for="' . $nombre_for . '">' . $a_genero['nombre'] . '</label>';
                             ?>
                         </div>
                         <span class="badge badge-success badge-pill"><?php echo contarItems($a_multi_productos, 'id_genero', $a_genero['id_genero']); ?></span>
