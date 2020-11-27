@@ -3,8 +3,8 @@ $pagina = 'Detalles';
 require_once("includes/head.php");
 
 
-
 ?>
+
 <!-- Fin Navegacion -->
 <main>
 
@@ -49,13 +49,15 @@ require_once("includes/head.php");
           <div class="card-body">
             <h3 class="card-title"><?php echo $titulo?></h3>
             <h4 class="pb-1"><?php echo $precio?></h4>
-            <h5 class="pb-1">Editorial: <?php echo $editorial?></h5>
+            <h5 class="pb-1" name="Editorial">Editorial: <?php echo $editorial?></h5>
             <h5 class="pb-1">Género Literario: <?php echo $genero?></h5>
-            <p class="card-text"><?php echo $descripcion?></p>
-            <p class="font-weight-bold">Valoracion general</p>
+            <p class="card-text mb-1"><?php echo $descripcion?></p>
+            <a class="mb-2" href="descargarpdf.php?id=<?php echo $id_libro?>">Descargar informacion</a>
+            <p class="font-weight-bold mt-3 mb-0">Valoracion general</p>
             <span class="text-warning"><?php echo $estrellas?></span>
-            
+                      
           </div>
+         
         </div>
 
 
@@ -116,7 +118,7 @@ require_once("includes/head.php");
                     <div class="mt-3">
                         
                         <button type="submit" class="btn btn-warning" type="button">
-                            aceptar
+                            Aceptar
                         </button>
                     </div>
                 </form>
