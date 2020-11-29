@@ -76,7 +76,7 @@ require_once("includes/head.php");
         
         <div class="form-group col-md-6 mb-1">
         <label class="colorlbl" for="Nombre">Agregar un archivo</label>
-        <input type="hidden" class="colorlbl" name="MAX_FILE_SIZE" value="30000" />
+        <input type="hidden" class="colorlbl" name="MAX_FILE_SIZE" value="30000000" />
         <input class="mb-2" name="archivo" type="file" />
         </div>
 
