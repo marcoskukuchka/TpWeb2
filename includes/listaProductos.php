@@ -16,12 +16,15 @@ require_once("includes/func/funciones.php");
         $descripcion = cortar_palabras($a_producto['descripcion_larga'], 70);
         $totalEstrellas = muestraEstrellas($a_multi_comentario,'id_producto', $a_producto['id_producto']);
         $img = 'img\\productos\\'.$id_prod.'\\'.$id_prod.'_mini.jpg';
+        $destacado = $a_producto['destacado'];
       
 ?>
 
     <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
-            <a href="detallesProducto.php?id=<?php echo $id_prod ?>"><img class="card-img-top"  src="<?php echo $img?>" alt="<?php echo $nombre?>"></a>
+            <a href="detallesProducto.php?id=<?php echo $id_prod ?>"><img class="card-img-top"  src="<?php echo $img?>" alt="<?php echo $nombre?>"> <?php if ($destacado == TRUE){
+                 ?> <span class="badge badge-danger destacado">NOVEDAD</span>
+                  <?php }?> </a>
             <div class="card-body">
                 <h4 class="card-title">
                 <a href="detallesProducto.php?id=<?php echo $id_prod?>"><?php echo $nombre?></a>
