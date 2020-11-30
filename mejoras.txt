@@ -1,0 +1,11 @@
+Se realizaron las siguientes mejoras:
+
+- Ventana modal personalizada con JS en el footer, seccion suscripcion al newsletter.
+- Descarga de la información del libro seleccionado en pdf (detallesProductos)
+- Permite la carga de archivos en la seccion contactos.
+- Validacion de campos de formulario de contacto con JS
+
+El sitio ya contaba con:
+- Un formulario de suscripción a una lista de correo, que agregue la dirección de correo del usuario a un archivo jSon llamado “correos” (nuestro archivo se llama email.json).
+- Agregar una página en la que solo se vean productos destacados, agregando un atributo de “destacado” si/no a cada producto.
+- Enviar un mail al área solicitada en el formulario de contáctenos.

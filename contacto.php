@@ -26,15 +26,15 @@ require_once("includes/head.php");
   <section>
     <div class="container col-lg-6 mt-5 pt-5 pb-5">
       <h2 class="text-uppercase display-4 text-white sombra">Contactenos</h2>
-      <form action="gracias.php" method="POST" enctype="multipart/form-data">
+      <form action="gracias.php" id= "formcontacto" method="POST" enctype="multipart/form-data">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label class="colorlbl" for="Nombre">Nombre:</label>
-            <input type="Nombre" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre" required>
+            <input type="Nombre" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre">
           </div>
           <div class="form-group col-md-6">
             <label class="colorlbl" for="inputapellido">Apellido:</label>
-            <input type="apellido" class="form-control" name="Apellido" id="apellido" placeholder="Apellido" required>
+            <input type="apellido" class="form-control" name="Apellido" id="apellido" placeholder="Apellido">
           </div>
         </div>
         <div class="form-row">
@@ -53,12 +53,12 @@ require_once("includes/head.php");
         <div class="form-row">
           <div class="col-md-6">
             <label class="colorlbl" for="Asunto"></label>
-            <input type="Asunto" class="form-control" name="Asunto" id="Asunto" placeholder="Asunto" required>
+            <input type="Asunto" class="form-control" name="Asunto" id="Asunto" placeholder="Asunto">
           </div>
           <div class="col-md-6">
 
             <label class="colorlbl" for="Asunto"><span></span></label>
-            <select class="custom-select" id="Area" name="Area" required>
+            <select class="custom-select" id="Area" name="Area">
               <option selected disabled value="">Para:</option>
               <option value="Ventas">ventas@elbardo.com.ar</option>
               <option value="Info">info@elbardo.com.ar</option>
@@ -70,7 +70,7 @@ require_once("includes/head.php");
         </div>
         <div class="form-group pt-3">
           <label class="colorlbl" for="Mensaje">Mensaje:</label>
-          <textarea class="form-control" id="Mensaje" name="Mensaje" rows="6" min="50" required></textarea>
+          <textarea class="form-control" id="Mensaje" name="Mensaje" rows="6" min="50"></textarea>
         </div>
         
         
