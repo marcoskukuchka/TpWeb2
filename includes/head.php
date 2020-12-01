@@ -50,6 +50,13 @@
                     <li  <?php echo (($pagina === 'Contacto') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book mr-2"></i>Contacto</a>
                     </li>
+                    
+<?php $i = 0 ?>
+
+                    <li>
+                    <?php echo (($pagina === 'Carrito') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>    
+                    <a href="pruebacarrito.php" class="a"><img class="img-fluid logos" width="30" heigth="30" src="img/carrito.png"></a>(<?php echo $i?>);
+                    </li>
                 </ul>
             </div>
         </nav>
