@@ -2,8 +2,6 @@
 $pagina = 'Carrito';
 require_once("includes/head.php");
 
-
-
 ?>
 
 <main>
@@ -13,10 +11,7 @@ require_once("includes/head.php");
 
             <?php $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true); ?>
 
-
-
             let baseDeDatos = <?php echo json_encode($a_multi_productos) ?>;
-
             let $items = document.querySelector('#items');
             let carrito = [];
             let total = 0;
@@ -24,55 +19,48 @@ require_once("includes/head.php");
             let $total = document.querySelector('#total');
             let $botonVaciar = document.querySelector('#boton-vaciar');
 
-
-
             // Funciones
             function renderItems() {
                 for (let info in baseDeDatos) {
 
-                   
-                        nombre = baseDeDatos[info].nombre;
-                        precio = baseDeDatos[info].precio;
-                        id_prod = baseDeDatos[info].id_producto
-
-                        console.log(id_prod);
-
-                      
-
-                        // Estructura
-                        let miNodo = document.createElement('div');
-                        miNodo.classList.add('card', 'col-sm-5');
-                        // Body
-                        let miNodoCardBody = document.createElement('div');
-                        miNodoCardBody.classList.add('card-body');
-                        // Titulo
-                        let miNodoTitle = document.createElement('h5');
-                        miNodoTitle.classList.add('card-title');
-                        miNodoTitle.textContent = nombre;
-                        // Imagen
-                        let miNodoImagen = document.createElement('img');
-                        miNodoImagen.classList.add('img-fluid');
-                        miNodoImagen.setAttribute('src', info['id_producto']);
-                        // Precio
-                        let miNodoPrecio = document.createElement('p');
-                        miNodoPrecio.classList.add('card-text');
-                        miNodoPrecio.textContent = precio;
-                        // Boton 
-                        let miNodoBoton = document.createElement('button');
-                        miNodoBoton.classList.add('btn', 'btn-warning');
-                        miNodoBoton.textContent = 'Añadir';
-                        miNodoBoton.setAttribute('marcador', id_prod);
-                        miNodoBoton.addEventListener('click', anyadirCarrito);
-                        // Insertamos
-                        miNodoCardBody.appendChild(miNodoImagen);
-                        miNodoCardBody.appendChild(miNodoTitle);
-                        miNodoCardBody.appendChild(miNodoPrecio);
-                        miNodoCardBody.appendChild(miNodoBoton);
-                        miNodo.appendChild(miNodoCardBody);
-                        $items.appendChild(miNodo);
-                    }
-                
-
+                    nombre = baseDeDatos[info].nombre;
+                    precio = baseDeDatos[info].precio;
+                    id_prod = baseDeDatos[info].id_producto;
+                    img =  `img/productos/${id_prod}/${id_prod}_mini.jpg`;
+                 
+                 
+                    // Estructura
+                    let miNodo = document.createElement('div');
+                    miNodo.classList.add('card', 'col-md-6', 'mt-5');
+                    // Body
+                    let miNodoCardBody = document.createElement('div');
+                    miNodoCardBody.classList.add('card-body','col-md-12');
+                    // Titulo
+                    let miNodoTitle = document.createElement('h5');
+                    miNodoTitle.classList.add('card-title');
+                    miNodoTitle.textContent = nombre;
+                    // Imagen
+                    let miNodoImagen = document.createElement('img');
+                    miNodoImagen.classList.add('img-fluid');
+                    miNodoImagen.setAttribute('src', img);
+                    // Precio
+                    let miNodoPrecio = document.createElement('p');
+                    miNodoPrecio.classList.add('card-text');
+                    miNodoPrecio.textContent = precio;
+                    // Boton 
+                    let miNodoBoton = document.createElement('button');
+                    miNodoBoton.classList.add('btn', 'btn-warning');
+                    miNodoBoton.textContent = 'Añadir';
+                    miNodoBoton.setAttribute('marcador', id_prod);
+                    miNodoBoton.addEventListener('click', anyadirCarrito);
+                    // Insertamos
+                    miNodoCardBody.appendChild(miNodoImagen);
+                    miNodoCardBody.appendChild(miNodoTitle);
+                    miNodoCardBody.appendChild(miNodoPrecio);
+                    miNodoCardBody.appendChild(miNodoBoton);
+                    miNodo.appendChild(miNodoCardBody);
+                    $items.appendChild(miNodo);
+                }
             }
 
             function anyadirCarrito() {
@@ -166,13 +154,14 @@ require_once("includes/head.php");
     <div class="container">
         <div class="row">
 
-        <?php require_once("includes/aside.php")?>;
+            <?php require_once("includes/aside.php") ?>
 
 
             <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-4 row"></main>
+            <main id="items" class="col-md-6 row margen"></main>
             <!-- Carrito -->
-            <aside class="col-sm-2">
+            <aside class="col-sm-2 position">
+
                 <h2>Carrito</h2>
                 <!-- Elementos del carrito -->
                 <ul id="carrito" class="list-group"></ul>
@@ -183,9 +172,8 @@ require_once("includes/head.php");
             </aside>
         </div>
     </div>
-    </main>
+</main>
 
 <?php
 require_once("includes/footer.php");
 ?>
-
