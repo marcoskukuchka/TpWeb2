@@ -55,9 +55,16 @@ require_once("includes/head.php");
             <a class="mb-2" href="descargarpdf.php?id=<?php echo $id_libro?>">Descargar informacion</a>
             <p class="font-weight-bold mt-3 mb-0">Valoracion general</p>
             <span class="text-warning"><?php echo $estrellas?></span>
+            
                       
           </div>
-         
+          <form action="carrito.php" method="get">
+          <input type="hidden" disable = "disable" class="form-control" name = "producto" value = <?php echo $id_banner; ?> id="producto">
+                   <button type="submit" class="btn btn-warning" type="button">
+                            Aceptar
+                        </button>
+                    </div>
+                </form>
         </div>
 
 
