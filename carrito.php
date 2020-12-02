@@ -1,22 +1,15 @@
-<!-- hasta aca mi codigo -->
-
 <?php
 $pagina = 'Carrito';
 require_once("includes/head.php");
 require_once("includes/func/funciones.php");
-
 ?>
 
-<!-- Fin Navegacion -->
-<main>
+<main >
 
+    <div class="container ">
+        <div class="row mt-5">
 
-    <!-- contenido -->
-    <div class="container mt-5">
-
-        <div class="row">
-            <?php
-      require_once("includes/aside.php");
+    <?php require_once("includes/aside.php");
       if (isset($_REQUEST['producto'])) {
         $contenido = file_get_contents('json/id_compras.json'); //carga archivo json
         $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
@@ -30,67 +23,104 @@ require_once("includes/func/funciones.php");
         
     
     }
-    
-    
-    
-    $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
-    $a_multi_compra = json_decode(file_get_contents('json/id_compras.json'), true);
-    $a_multi_editorial = json_decode(file_get_contents('json/editorial.json'), true);
-    $a_multi_genero = json_decode(file_get_contents('json/genero.json'), true);
-    $a_multi_comentarios = json_decode(file_get_contents('json/comentarios.json'), true);
-    ?>
-     <div class="container-fluid col-lg-8 col-md-4 col-sm-12 mt-5">
-    <?php
-   
+    if (isset($_REQUEST['quitar_producto'])) {
+        $quitar_usuario = $_REQUEST['quitar_producto'];
+        
+        $datos_usuarios= file_get_contents('json/id_compras.json');
 
-    foreach ($a_multi_productos as $a_productos) {
-        foreach($a_multi_compra as $a_compra) {
-            if ($a_productos["id_producto"]== $a_compra['id_producto']) {
-                /* echo '<pre>';  
-                print_r($a_productos);
-                echo '</pre>';  */
-                $titulo = $a_productos['nombre'];
-                $precio = $a_productos['precio'];
-                $editorial = $a_productos['id_editorial'];
-                $genero = $a_productos['id_genero'];
-                $descripcion = $a_productos['descripcion_larga'];
-                /* $estrellas = muestraEstrellas($a_multi_comentarios,'id_producto', $a_producto['id_producto']); */
-                $id_banner = $a_productos['id_producto'];
-                $banner = 'img\\productos\\'.$id_banner.'\\'.$id_banner.'_banner.jpg';
-                $descripcion = cortar_palabras($a_productos['descripcion_larga'], 70);
-                ?>
-            
-                <div class="card border-primary mb-3 " >
-                    <div class="card-header"><?php echo $titulo ?></div>
-                    <div class="card-body text-primary">
-                        <h5 class="card-title"><?php echo $precio ?></h5>
-                        <p class="card-text"><?php echo $descripcion?></p>
-                    </div>
-                </div>
-            
-            <?php
+        $json = json_decode($datos_usuarios, true);
+        foreach($json as $usuarioJson=>$val)
+        {
+            if($val['id_producto']==$quitar_usuario)
+            {
+                unset($json[$usuarioJson]);
             }
         }
-    }
-  
-      ?>
-
-</div>
-           
+        file_put_contents("json/id_compras.json", json_encode($json, JSON_FORCE_OBJECT));
+    
+    } ?>
 
 
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-md-6  row margen">
+
+                <div class="row col-lg-12 col-md-12 mb-4 ">
+                    <?php
+        
+      
 
 
+        $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
+        $a_multi_compra = json_decode(file_get_contents('json/id_compras.json'), true);
+        $a_multi_editorial = json_decode(file_get_contents('json/editorial.json'), true);
+        $a_multi_genero = json_decode(file_get_contents('json/genero.json'), true);
+        $a_multi_comentario = json_decode(file_get_contents('json/comentarios.json'), true);
+        
+        
+        foreach ($a_multi_productos as $a_producto) {
+            foreach($a_multi_compra as $a_compra) {
+            if ($a_producto["id_producto"]== $a_compra['id_producto']) {
+
+                $id_prod = $a_producto['id_producto'];
+                $precio = $a_producto['precio'];
+                $nombre = $a_producto['nombre'];
+                $descripcion = cortar_palabras($a_producto['descripcion_larga'], 70);
+                $totalEstrellas = muestraEstrellas($a_multi_comentario, 'id_producto', $a_producto['id_producto']);
+                $img = 'img\\productos\\' . $id_prod . '\\' . $id_prod . '_mini.jpg';
+
+        ?>
+
+                    <div class="col-lg-6 col-md-12 mb-4 mt-5">
+                        <div class="card ">
+                            <a href="detallesProducto.php?id=<?php echo $id_prod ?>"><img class="card-img-top"
+                                    src="<?php echo $img ?>" alt="<?php echo $nombre ?>"></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="detallesProducto.php?id=<?php echo $id_prod ?>"><?php echo $nombre ?></a>
+                                </h4>
+                                <h5><?php echo $precio; ?></h5>
+                                <p class="card-text"><?php echo $descripcion ?></p>
+                            </div>
+                            <div class="card-footer">
+                                <form action="carrito.php" method="get">
+                                    <input type="hidden" disable="disable" class="form-control" name="quitar_producto"
+                                        value=<?php echo $id_prod; ?> id="producto">
+                                    <button type="submit" class="btn btn-warning" type="button">
+                                        Eliminar
+                                    </button>
+
+                                </form>
+                                <small><?php echo $totalEstrellas ?></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+            }
+        }
+        }
+        ?>
 
 
+                </div>
 
 
+            </main>
+            <!-- Carrito -->
+            <aside class="col-sm-2 position">
 
-
-
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: $ <span id="total"></span></p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+        </div>
+    </div>
 </main>
 
-<!-- inicio Footer -->
 <?php
 require_once("includes/footer.php");
 ?>
