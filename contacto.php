@@ -99,4 +99,5 @@ require_once("includes/head.php");
 <!-- footer  -->
 <?php
 require_once("includes/footer.php");
+require_once("includes/func/funciones.php")
 ?>

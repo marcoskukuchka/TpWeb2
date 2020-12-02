@@ -1,6 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formcontacto").addEventListener('submit', validarFormulario); 
-  });
+//Validacion formulario JS
+
+
+
+window.onload=function() {
+    let validar = document.getElementById("formcontacto");
+    validar.addEventListener('submit', validarFormulario); 
+  };
+
   
   function validarFormulario(evento) {
     evento.preventDefault();
@@ -35,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }this.submit();
 
 
-}
+  }
 
 
 //Ventana modal suscripcion newsletter
@@ -47,8 +53,8 @@ if (document.getElementById("modal")) {
     var body = document.getElementsByTagName("body")[0];
 
 
-    btn.onclick = function() {
-        event.preventDefault();
+    btn.onclick = function(evento) {
+        evento.preventDefault();
         modal.style.display = "block";
 
         body.style.position = "static";
@@ -66,3 +72,4 @@ if (document.getElementById("modal")) {
 
    
 }
+
