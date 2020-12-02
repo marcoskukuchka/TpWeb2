@@ -47,6 +47,9 @@
                     <li <?php echo (($pagina === 'Productos') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="productos.php"><i class="fas fa-book mr-2"></i>Libros</a>
                     </li>
+                    <li  <?php echo (($pagina === 'Carrito') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
+                        <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart mr-2"></i>Compras</a>
+                    </li>
                     <li  <?php echo (($pagina === 'Contacto') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book mr-2"></i>Contacto</a>
                     </li>
