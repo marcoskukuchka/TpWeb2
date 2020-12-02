@@ -33,11 +33,13 @@ textarea,
 
 .fondo-portada {
     /* imagene de fondo */
-    background-image: /* gradientes como imagen de fondo */
-    linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
-    /* con la coma podemos enlistar imágenes como fondo multiples  */
-    , /* vínculo a la imagen */
-    url(../img/portada.jpg);
+    background-image:
+        /* gradientes como imagen de fondo */
+        linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0.472))
+        /* con la coma podemos enlistar imágenes como fondo multiples  */
+        ,
+        /* vínculo a la imagen */
+        url(../img/portada.jpg);
     /* tamaño de imagen de fondo */
     background-size: cover;
     /* imagen como mozaico */
@@ -128,3 +130,40 @@ textarea {
     border-radius: 3px;
     padding: 16px;
 }
+
+
+/*Modal */
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: orange;
+    margin: auto;
+    border: 1px solid lightgray;
+    width: 20%;
+}
+
+.modalContainer .close {
+    margin-left: auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

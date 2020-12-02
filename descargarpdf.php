@@ -21,6 +21,7 @@ $pdf->Image($banner, 2,20);
 $pdf->SetFont('Arial','',12); 
 $pdf->SetXY(10,90);
 $pdf->MultiCell(185,8,utf8_decode($descripcion),1);
-$pdf->Output('D', 'Descripcion.pdf');
+$pdf->Output('D', 'Descripcion.pdf', true);
+
 
 ?>

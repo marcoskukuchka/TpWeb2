@@ -7,6 +7,11 @@ require ('PHPMailer-master\src\PHPMailer.php');
 require ('PHPMailer-master\src\Exception.php');
 require ('PHPMailer-master\src\SMTP.php');
 
+$archivo = (isset($_FILES['archivo'])) ? $_FILES['archivo'] : null;
+if ($archivo) {
+   $ruta_destino_archivo = "contactos/{$archivo['name']}";
+   $archivo_ok = move_uploaded_file($archivo['tmp_name'], $ruta_destino_archivo);
+}
 
 
 $mail = new PHPMailer();
@@ -44,6 +49,8 @@ $mail->IsHTML(true);     // set email
 
 $mail->Subject = $_REQUEST['Asunto'];
 $mail->Body    = $_REQUEST['mail']." ".$_REQUEST['Mensaje'];
+
+$mail->addAttachment($ruta_destino_archivo);
 $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
 
 
@@ -59,11 +66,16 @@ if(!$mail->Send())
 /* echo "Message has been sent"; */
 
 
+
+
+
 $contenido = file_get_contents('json/a_contactos.json'); //carga archivo json
 $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
 $a_contactos = array('fecha' => date('d-m-Y H:i:s'), 'nombre' => $_REQUEST['Nombre'],'apellido' => $_REQUEST['Apellido'],'telefono' => $_REQUEST['telefono'], 'mail'=>$_REQUEST['mail'],'asunto'=>$_REQUEST['Asunto'],'mensaje'=>$_REQUEST['Mensaje'], 'sector' => $_REQUEST['Area']); //agrega nueva info al array
 $contenido_decodificado[date('YmdHisU')] = $a_contactos; //agrega contenido
 $js = json_encode($contenido_decodificado); //codifa nuevamente
 file_put_contents('json/a_contactos.json', $js); //agrega el contenido
+
+
 
 ?> 

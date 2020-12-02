@@ -34,7 +34,7 @@
     <!-- Barra navegacion -->
 
     <header>
-        <nav class="container-fluid navbar navbar-icon-top navbar-expand-lg navbar-dark fondonav fixed-top ">
+        <nav class="container-fluid navbar navbar-icon-top navbar-expand-lg navbar-dark fondonav fixed-top">
             <a id="marca" class="navbar-brand" href="index.php"><img class="img-fluid logos" src="img/path2925.png" alt="logo libreria"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,6 +50,8 @@
                     <li  <?php echo (($pagina === 'Contacto') ? ' class="nav-item active" ': 'class="nav-item"'); ?>>
                         <a class="nav-link" href="contacto.php"><i class="fas fa-address-book mr-2"></i>Contacto</a>
                     </li>
+                    <?php $i = 0 ?>
+                    
                 </ul>
             </div>
         </nav>

@@ -13,65 +13,74 @@
                 <div class="col-sm text-center">
                     <h4>Recibi las novedades</h4>
 
-                    <form class="mi-form" method="post" >
+                    <form class="mi-form">
                         <div class="form-group">
                             <label for="inputAddress"></label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Direccion de email">
                             <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu email con nadie.</small>
                         </div>
-                        <button type="submit"  value="guardar" class="mb-2 btn-block btn-warning" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
-                            Registrarse
-                        </button>
+
+                        <button id="modal" class="mb-2 btn-block btn-warning" class="btn btn-primary">Quiero suscribirme</button>
+
+                        <div id="tvesModal" class="modalContainer">
+                            <div class="modal-content">
+                            <button id="cerrar" class="close" >×</button>
+                                <h2>Gracias!</h2>
+                                <p>Ya te suscribiste!</p>
+                            </div>
+                        </div>
+
+
+                        <?php
+
+                        if (isset($_REQUEST['email'])) {
+
+                            $contenido = file_get_contents('json/email.json'); //carga archivo json
+                            $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
+                            $a_email = array('email' => $_REQUEST['email']); //agrega nueva info al array
+                            $contenido_decodificado[date('YmdHisU')] = $a_email; //agrega contenido
+                            $js = json_encode($contenido_decodificado); //codifica nuevamente
+                            file_put_contents('json/email.json', $js); //agrega el contenido
+
+                        }
+
+                        ?>
+
                     </form>
-                    
-                    <?php 
-             
-                    if (isset($_REQUEST['email'])){
-                        $contenido = file_get_contents('json/email.json'); //carga archivo json
-                        $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
-                        $a_email= array( 'email' => $_REQUEST['email']); //agrega nueva info al array
-                        $contenido_decodificado[date('YmdHisU')] = $a_email; //agrega contenido
-                        $js = json_encode($contenido_decodificado); //codifica nuevamente
-                        file_put_contents('json/email.json', $js); //agrega el contenido
-                        
-                    } 
-                    
-                    ?>
-
-
                 </div>
-                
+
+
                 <div class="col-sm text-center">
                     <h5>En cada minuto hay muchos días, aprovechalos con un libro</h5>
                     <p>El Bardo inmortal es una libreria donde podes encontrar todo lo que quieras leer... si no lo tenemos, ¡te lo conseguimos!</p>
 
                     <h6>Seguinos en las redes sociales</h6>
-                        <ul class="justify-content-center list-group list-group-horizontal redes ">
+                    <ul class="justify-content-center list-group list-group-horizontal redes ">
 
-                            <li class="list-group-item fondofooter border-0">
-                                <a href="https://www.facebook.com/" target="new">
-                                    <i class="fab fa-facebook-f"></i>
+                        <li class="list-group-item fondofooter border-0">
+                            <a href="https://www.facebook.com/" target="new">
+                                <i class="fab fa-facebook-f"></i>
 
-                                </a>
-                            </li>
-                            <li class="list-group-item fondofooter border-0">
-                                <a href="https://www.twitter.com/" target="new">
-                                    <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item fondofooter border-0">
+                            <a href="https://www.twitter.com/" target="new">
+                                <i class="fab fa-twitter"></i>
 
-                                </a>
-                            </li>
-                            <li class="list-group-item fondofooter border-0">
-                                <a href="https://www.instagram.com/" target="new">
-                                    <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item fondofooter border-0">
+                            <a href="https://www.instagram.com/" target="new">
+                                <i class="fab fa-instagram"></i>
 
-                                </a>
-                            </li>
-                            <li class="list-group-item fondofooter border-0">
-                                <a href="https://www.youtube.com.ar/" target="new">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
+                            </a>
+                        </li>
+                        <li class="list-group-item fondofooter border-0">
+                            <a href="https://www.youtube.com.ar/" target="new">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
