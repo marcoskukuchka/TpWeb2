@@ -1,13 +1,5 @@
 //Validacion formulario JS
 
-
-
-window.onload=function() {
-    let validar = document.getElementById("formcontacto");
-    validar.addEventListener('submit', validarFormulario); 
-  };
-
-  
   function validarFormulario(evento) {
     evento.preventDefault();
     var nombre = document.getElementById('Nombre').value;

@@ -91,6 +91,10 @@ require_once("includes/head.php");
     </div>
 
   </section>
+  <script>  window.onload= function() {
+    document.getElementById("formcontacto").addEventListener('submit', validarFormulario); 
+  };
+</script>
 
 </main>
 
@@ -99,5 +103,5 @@ require_once("includes/head.php");
 <!-- footer  -->
 <?php
 require_once("includes/footer.php");
-require_once("includes/func/funciones.php")
+
 ?>
