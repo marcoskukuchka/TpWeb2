@@ -31,7 +31,7 @@ require_once("includes/head.php");
 
       /* Variables aux para la descripcion del producto */
       $titulo = $a_producto['nombre'];
-      $precio = $a_producto['precio'];
+      $precio = '$' .$a_producto['precio'];
       $editorial = $a_editorial['nombre'];
       $genero = $a_genero['nombre'];
       $descripcion = $a_producto['descripcion_larga'];
@@ -51,8 +51,8 @@ require_once("includes/head.php");
                         <h4 class="pb-1"><?php echo $precio?></h4>
                         <h5 class="pb-1" name="Editorial">Editorial: <?php echo $editorial?></h5>
                         <h5 class="pb-1">Género Literario: <?php echo $genero?></h5>
-                        <p class="card-text mb-1"><?php echo $descripcion?></p>
-                        <a class="mb-2" href="descargarpdf.php?id=<?php echo $id_libro?>">Descargar informacion</a>
+                        <p class="card-text mb-2"><?php echo $descripcion?></p>
+                        <a class="mb-2 pt-5" href="descargarpdf.php?id=<?php echo $id_libro?>">Descargar informacion <i class="fas fa-file-download"></i></a>
                         <p class="font-weight-bold mt-3 mb-0">Valoracion general</p>
                         <span class="text-warning"><?php echo $estrellas?></span>
 

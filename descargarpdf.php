@@ -5,7 +5,7 @@ require_once("fpdf182/fpdf.php");
 $id_libro = $_REQUEST['id'];
 $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
 $a_producto = $a_multi_productos[$id_libro];
-$precio = $a_producto['precio'];
+$precio = '$' . $a_producto['precio'];
 $nombre = $a_producto['nombre'];
 $banner = 'img\\productos\\'.$id_libro.'\\'.$id_libro.'_banner.jpg';
 $descripcion = $a_producto['descripcion_larga'];
