@@ -56,7 +56,8 @@ require_once("includes/func/funciones.php");
         $a_multi_genero = json_decode(file_get_contents('json/genero.json'), true);
         $a_multi_comentario = json_decode(file_get_contents('json/comentarios.json'), true);
         
-        
+        $total = 0;
+        $cantidad_productos= 0;
         foreach ($a_multi_productos as $a_producto) {
             foreach($a_multi_compra as $a_compra) {
             if ($a_producto["id_producto"]== $a_compra['id_producto']) {
@@ -67,6 +68,8 @@ require_once("includes/func/funciones.php");
                 $descripcion = cortar_palabras($a_producto['descripcion_larga'], 70);
                 $totalEstrellas = muestraEstrellas($a_multi_comentario, 'id_producto', $a_producto['id_producto']);
                 $img = 'img\\productos\\' . $id_prod . '\\' . $id_prod . '_mini.jpg';
+                $total = $total + $precio; 
+                $cantidad_productos++;
 
         ?>
 
@@ -114,8 +117,10 @@ require_once("includes/func/funciones.php");
                 <ul id="carrito" class="list-group"></ul>
                 <hr>
                 <!-- Precio total -->
-                <p class="text-right">Total: $ <span id="total"></span></p>
-                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <p class="text-right">Cantidad productos: <?php echo $cantidad_productos ?> <span id="total"></span></p>
+
+                <p class="text-right">Total: $<?php echo $total ?> <span id="total"></span></p>
+                <button id="boton-vaciar" class="btn btn-danger">Finalizar Compra</button>
             </aside>
         </div>
     </div>

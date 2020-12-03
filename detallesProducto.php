@@ -48,7 +48,7 @@ require_once("includes/head.php");
                     <img class="card-img-top img-fluid" src="<?php echo $banner ?>" alt="<?php echo $titulo?>">
                     <div class="card-body">
                         <h3 class="card-title"><?php echo $titulo?></h3>
-                        <h4 class="pb-1"><?php echo $precio?></h4>
+                        <h4 class="pb-1">$<?php echo $precio?></h4>
                         <h5 class="pb-1" name="Editorial">Editorial: <?php echo $editorial?></h5>
                         <h5 class="pb-1">Género Literario: <?php echo $genero?></h5>
                         <p class="card-text mb-1"><?php echo $descripcion?></p>
