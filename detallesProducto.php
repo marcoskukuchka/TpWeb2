@@ -48,7 +48,7 @@ require_once("includes/head.php");
                     <img class="card-img-top img-fluid" src="<?php echo $banner ?>" alt="<?php echo $titulo?>">
                     <div class="card-body">
                         <h3 class="card-title"><?php echo $titulo?></h3>
-                        <h4 class="pb-1">$<?php echo $precio?></h4>
+                        <h4 class="pb-1"><?php echo $precio?></h4>
                         <h5 class="pb-1" name="Editorial">Editorial: <?php echo $editorial?></h5>
                         <h5 class="pb-1">Género Literario: <?php echo $genero?></h5>
                         <p class="card-text mb-1"><?php echo $descripcion?></p>
@@ -58,23 +58,29 @@ require_once("includes/head.php");
 
 
                     </div>
-                    <form action="carrito.php" method="get">
-                        <input type="hidden" disable="disable" class="form-control" name="producto"
-                            value=<?php echo $id_banner; ?> id="producto">
-                        <button type="submit" class="btn btn-warning" type="button">
-                            Aceptar
-                        </button>
-               
-                </form>
-            </div>
+                    <div class="align-items-center">
+                        <div class="row w-100 align-items-center">
+                            <div class="col ml-3">
+                                <form action="carrito.php" method="get">
+                                    <input type="hidden" disable="disable" class="form-control" name="producto"
+                                        value=<?php echo $id_banner; ?> id="producto">
+                                    <button type="submit" class="btn btn-warning mb-3" type="button">
+                                        Comprar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
-
-            <div class="card card-outline-secondary my-4">
-                <div class="card-body">
-                    <h4>Comentarios</h4>
                 </div>
-                <div class="card-body">
-                    <?php 
+
+
+                <div class="card card-outline-secondary my-4">
+                    <div class="card-body">
+                        <h4>Comentarios</h4>
+                    </div>
+                    <div class="card-body">
+                        <?php 
              $cantidad = 1;
              
               rsort($a_multi_comentarios);
@@ -88,65 +94,69 @@ require_once("includes/head.php");
                      $valoracion = valoracionComentario($a_comentario['valoracion']);
                      
                      ?>
-                    <p><?php echo $comentario?></p>
-                    <small class="text-muted">Comentado por <?php echo $mail ?></small>
-                    <br>
-                    <small class="text-muted">Valoracion <?php echo $valoracion?></small>
-                    <hr>
-                    <?php
+                        <p><?php echo $comentario?></p>
+                        <small class="text-muted">Comentado por <?php echo $mail ?></small>
+                        <br>
+                        <small class="text-muted">Valoracion <?php echo $valoracion?></small>
+                        <hr>
+                        <?php
                      if ($cantidad > 3) {
                          break;
                      }
                  }
                }
             ?>
-                    <h5>Dejanos tu reseña</h5>
-                    <form action="comentarioenviado.php" method="get">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">e-mail</label>
-                            <input type="email" class="form-control" name="mail" id="email"
-                                placeholder="Direccion de email">
-                        </div>
+                        <h5>Dejanos tu reseña</h5>
+                        <form action="comentarioenviado.php" method="get">
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">e-mail</label>
+                                <input type="email" class="form-control" name="mail" id="email"
+                                    placeholder="Direccion de email">
+                            </div>
 
-                        <input type="hidden" disable="disable" class="form-control" name="banner"
-                            value=<?php echo $id_banner; ?> id="banner">
+                            <input type="hidden" disable="disable" class="form-control" name="banner"
+                                value=<?php echo $id_banner; ?> id="banner">
 
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Reseña:</label>
-                            <textarea class="form-control" name="comentario" id="message-text"></textarea>
-                        </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Reseña:</label>
+                                <textarea class="form-control" name="comentario" id="message-text"></textarea>
+                            </div>
 
-                        <label for="Asunto">Calificación</label>
-                        <select class="custom-select mb-3" name="valoracion" id="Valoracion" required>
-                            <option selected value=5><span class="text-warning">&#9733; &#9733; &#9733; &#9733;
-                                    &#9733;</span></option>
-                            <option value="4"><span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                            </option>
-                            <option value="3"><span class="text-warning">&#9733; &#9733; &#9733; &#9734; &#9734;</span>
-                            </option>
-                            <option value="2"><span class="text-warning">&#9733; &#9733; &#9734; &#9734; &#9734;</span>
-                            </option>
-                            <option value="1"><span class="text-warning">&#9733; &#9734; &#9734; &#9734; &#9734;</span>
-                            </option>
-                        </select>
+                            <label for="Asunto">Calificación</label>
+                            <select class="custom-select mb-3" name="valoracion" id="Valoracion" required>
+                                <option selected value=5><span class="text-warning">&#9733; &#9733; &#9733; &#9733;
+                                        &#9733;</span></option>
+                                <option value="4"><span class="text-warning">&#9733; &#9733; &#9733; &#9733;
+                                        &#9734;</span>
+                                </option>
+                                <option value="3"><span class="text-warning">&#9733; &#9733; &#9733; &#9734;
+                                        &#9734;</span>
+                                </option>
+                                <option value="2"><span class="text-warning">&#9733; &#9733; &#9734; &#9734;
+                                        &#9734;</span>
+                                </option>
+                                <option value="1"><span class="text-warning">&#9733; &#9734; &#9734; &#9734;
+                                        &#9734;</span>
+                                </option>
+                            </select>
 
-                        <div class="mt-3">
+                            <div class="mt-3">
 
-                            <button type="submit" class="btn btn-warning" type="button">
-                                Aceptar
-                            </button>
-                        </div>
-                    </form>
-
-
+                                <button type="submit" class="btn btn-warning" type="button">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
 
 
 
 
+
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </main>
 

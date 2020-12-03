@@ -4,12 +4,12 @@ require_once("includes/head.php");
 require_once("includes/func/funciones.php");
 ?>
 
-<main >
+<main>
 
     <div class="container ">
         <div class="row mt-5">
 
-    <?php require_once("includes/aside.php");
+            <?php require_once("includes/aside.php");
       if (isset($_REQUEST['producto'])) {
         $contenido = file_get_contents('json/id_compras.json'); //carga archivo json
         $contenido_decodificado = json_decode($contenido, true);  //crea un array para php
@@ -85,15 +85,21 @@ require_once("includes/func/funciones.php");
                                 <p class="card-text"><?php echo $descripcion ?></p>
                             </div>
                             <div class="card-footer">
-                                <form action="carrito.php" method="get">
-                                    <input type="hidden" disable="disable" class="form-control" name="quitar_producto"
-                                        value=<?php echo $id_prod; ?> id="producto">
-                                    <button type="submit" class="btn btn-warning" type="button">
-                                        Eliminar
-                                    </button>
 
-                                </form>
                                 <small><?php echo $totalEstrellas ?></small>
+                            </div>
+                            <div class="align-items-center">
+                                <div class="row w-100 align-items-center">
+                                    <div class="col ml-3">
+                                        <form action="carrito.php" method="get">
+                                            <input type="hidden" disable="disable" class="form-control"
+                                                name="quitar_producto" value=<?php echo $id_prod; ?> id="producto">
+                                            <button type="submit" class="btn btn-warning mb-2 " type="button">
+                                                Eliminar
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
