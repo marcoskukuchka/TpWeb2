@@ -13,7 +13,7 @@
                 <div class="col-sm text-center">
                     <h4>Recibi las novedades</h4>
 
-                    <form class="mi-form">
+                    <form class="mi-form" method="POST">
                         <div class="form-group">
                             <label for="inputAddress"></label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Direccion de email">
