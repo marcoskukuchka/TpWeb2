@@ -135,7 +135,7 @@ textarea {
 .position {
     margin-top: 3rem;
         width: 25%;
-      height: 25vh; 
+      height: 40vh; 
       min-height: 200px;
       overflow: auto;
       position: -webkit-sticky;
@@ -147,4 +147,8 @@ textarea {
     .margen{
     margin-top: 4rem;
     
+    }
+
+    .pagar{
+inline-size: -webkit-fill-available;
     }

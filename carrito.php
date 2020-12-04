@@ -124,9 +124,11 @@ require_once("includes/func/funciones.php");
                 <hr>
                 <!-- Precio total -->
                 <p class="text-right">Cantidad productos: <?php echo $cantidad_productos ?> <span id="total"></span></p>
-
+                
                 <p class="text-right">Total: $<?php echo $total ?> <span id="total"></span></p>
-                <button id="boton-vaciar" class="btn btn-danger">Finalizar Compra</button>
+                <a class="mb-2 pt-5" href="metodopago.php?total=<?php echo $total?>">Finalizar compra</a>
+               
+                
             </aside>
         </div>
     </div>
