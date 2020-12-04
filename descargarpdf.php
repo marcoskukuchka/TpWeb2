@@ -15,7 +15,7 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','',15); 
 $pdf->Cell(3,140,$nombre);
 $pdf->SetFont('Arial','',12); 
-$pdf->Cell(1,155,$precio);
+$pdf->Cell(1,155,"$".$precio);
 $pdf->Image('img\logoCabeza.png',3,6);
 $pdf->Image($banner, 2,20);
 $pdf->SetFont('Arial','',12); 
