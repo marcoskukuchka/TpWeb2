@@ -42,8 +42,8 @@
                             $js = json_encode($contenido_decodificado); //codifica nuevamente
                             file_put_contents('json/email.json', $js); //agrega el contenido
 
+                        
                         }
-
                         ?>
 
                     </form>

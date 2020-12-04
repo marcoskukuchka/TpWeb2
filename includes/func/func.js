@@ -45,7 +45,16 @@ if (document.getElementById("modal")) {
     var body = document.getElementsByTagName("body")[0];
 
 
+   
+
+
     btn.onclick = function(evento) {
+
+      var mail = document.getElementById('email').value;
+      if(mail.length == 0) {
+        alert('Por favor dejanos tu mail');
+        evento.preventDefault();
+      }else {
         evento.preventDefault();
         modal.style.display = "block";
 
@@ -61,7 +70,7 @@ if (document.getElementById("modal")) {
         body.style.height = "auto";
         body.style.overflow = "visible";
     }
-
+  }
    
 }
 
