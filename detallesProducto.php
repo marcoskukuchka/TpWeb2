@@ -111,7 +111,7 @@ require_once("includes/head.php");
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">e-mail</label>
                                 <input type="email" class="form-control" name="mail" id="email"
-                                    placeholder="Direccion de email">
+                                    placeholder="Direccion de email" required>
                             </div>
 
                             <input type="hidden" disable="disable" class="form-control" name="banner"
@@ -119,7 +119,7 @@ require_once("includes/head.php");
 
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">Reseña:</label>
-                                <textarea class="form-control" name="comentario" id="message-text"></textarea>
+                                <textarea class="form-control" name="comentario" id="message-text" required></textarea>
                             </div>
 
                             <label for="Asunto">Calificación</label>
