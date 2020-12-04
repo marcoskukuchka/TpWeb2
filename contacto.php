@@ -82,7 +82,7 @@ require_once("includes/head.php");
 
 
         <div class="">
-          <button type="reset" class="btn btn-secondary mr-3" action="contacto.php"> Limpiar</a></button>
+          <button type="reset" class="btn btn-secondary mr-3" action="contacto.php"> Limpiar</button>
           <button type="submit" class="btn btn-warning" id="Enviar"> Enviar</button>
         </div>
       </form>

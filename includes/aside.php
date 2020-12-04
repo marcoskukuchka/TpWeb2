@@ -97,7 +97,11 @@
         <div class="container-fluid h-100">
             <div class="row w-100 align-items-center">
                 <div class="col text-center">
-                    <input type="submit" value="Buscar" class="btn btn-success mt-2 mb-5 pl-5 pr-5">
+                    <input type="submit" value="Buscar" class="btn btn-success mt-2 pl-5 pr-5">
+                  
+                  <button class="btn btn-success mt-2 mb-5 pl-5 pr-5"><a href="productos.php" class="reseteo">Todos</a></button>
+   
+               
                 </div>
             </div>
         </div>
@@ -108,3 +112,4 @@
 
 
 </div>
+

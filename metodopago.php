@@ -38,7 +38,7 @@ $total = $_REQUEST['total'];
 
                         <input type="Nombre" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre" required>
                         <input type="apellido" class="form-control" name="Apellido" id="apellido" placeholder="Apellido" required>
-                        <input type="email" class="form-control" name="mail" id="email" placeholder="Direccion de email" required>
+                        <input type="email" class="form-control" name="mail" id="email" placeholder="Direccion de email (aca te va a llegar la factura)" required>
                         <input type="hidden" class="form-control" name="total" value=<?php echo $total; ?> disable="disable">
                         <p class="text-white" name=<?php $total ?>><?php echo "Tu total es de $" .  $total ?></p>
 
@@ -46,19 +46,19 @@ $total = $_REQUEST['total'];
 
 
                         <div class="mb-3">
-                              <h4 class="text-white">Elegi tu metodo de pago</h4>
+                              <h3 class="text-white text-center">Elegi tu metodo de pago</h3>
 
 
                               <div class="d-flex">
                                     <div class="pr-3">
-                                          <button type="submit" id="Enviar"><img src="img/paypal.jpg" width="100%" height="100%" alt="paypal"></button>
+                                          <button type="submit" class="pagar" id="Enviar"><img src="img/paypal.jpg" width="100%" height="100%" alt="paypal"></button>
                                     </div>
                                     <div class="pr-3">
-                                          <button type="submit" id="Enviar"><img src="img/visa.jpg" width="100%" height="100%" alt="visa"></button>
+                                          <button type="submit" class="pagar" id="Enviar"><img src="img/visa.jpg" width="100%" height="100%" alt="visa"></button>
                                     </div>
                                     <div class="pr-3">
 
-                                          <button type="submit" id="Enviar"><img src="img/mercadopago.jpg" width="100%" height="100%" alt="mercadopago"></button>
+                                          <button type="submit" class="pagar" id="Enviar"><img src="img/mercadopago.jpg" width="100%" height="100%" alt="mercadopago"></button>
                                     </div>
 
                               </div>

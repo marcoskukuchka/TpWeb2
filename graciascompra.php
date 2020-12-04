@@ -5,23 +5,14 @@ $pagina = 'Gracias';
 require_once('descargafactura.php');
 require_once("includes/head.php");
 
-
-
 ?>
-<!-- fin nav -->
 
-<!-- agregar imagen pluma y el bardo -->
-<!-- agregar un parrafo  -->
 <main class="fondo-portada reset">
 
       <section class="container">
 
-            <!-- identidad sitio -->
-
             <div class="container col-lg-9 col-md-6 mb-4 justify-content-center text-center pt-5">
                   <h1 class="pt-5 titulo text-uppercase display-3">El Bardo Inmortal</h1>
-
-                  
 
                   <blockquote class="blockquote">
                         <p class="mb-0 text-white">"La felicidad es un estado espontáneo y no controlado. Si podemos parar a pensar cuán feliz somos será que no estamos centrado en las sensaciones que nos provocan felicidad en sí."</p>
@@ -29,7 +20,6 @@ require_once("includes/head.php");
                   </blockquote>
             </div>
       </section>
-
 
 
       <section>

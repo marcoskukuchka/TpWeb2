@@ -187,4 +187,17 @@ textarea {
     
     .pagar{
 inline-size: -webkit-fill-available;
+border: none;
+padding: 0%;
+    }
+
+   .reseteo {
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .reseteo:hover
+    {
+        color: white;
     }
