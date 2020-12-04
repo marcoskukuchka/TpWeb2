@@ -4,7 +4,8 @@ Se realizaron las siguientes mejoras:
 - Descarga de la información del libro seleccionado en pdf (detallesProductos)
 - Permite la carga de archivos en la seccion contactos.
 - Validacion de campos de formulario de contacto con JS
-- Carrito de compras, página de pago y envio de factura pdf por mail (Compras)
+- Carrito de compras  
+- Pantalla de pago y envio de factura pdf por mail (Compras)
 
 El sitio ya contaba con:
 - Un formulario de suscripción a una lista de correo, que agregue la dirección de correo del usuario a un archivo jSon llamado “correos” (nuestro archivo se llama email.json).
