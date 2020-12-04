@@ -93,7 +93,7 @@ foreach ($a_multi_productos as $a_producto) {
                 unset($json[$usuarioJson]);
             }
         }
-        file_put_contents("json/id_compras.json", json_encode($json, JSON_FORCE_OBJECT));
+        file_put_contents("json/id_compras.json", json_encode($json));
     }
 }
 
