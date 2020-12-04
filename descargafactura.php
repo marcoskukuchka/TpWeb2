@@ -3,6 +3,11 @@
 require_once("fpdf182/fpdf.php");
 
 $total = $_REQUEST['total'];
+$nombrecomprador = $_REQUEST['Nombre'];
+$apellidocomprador = $_REQUEST['Apellido'];
+$mailcomprador = $_REQUEST['mail'];
+
+
 $a_multi_productos = json_decode(file_get_contents('json/detalleproductos.json'), true);
 $a_multi_compra = json_decode(file_get_contents('json/id_compras.json'), true);
 $a_multi_editorial = json_decode(file_get_contents('json/editorial.json'), true);
@@ -62,13 +67,15 @@ $pdf->Cell($current_x, $current_y, "Su total es: $" . $total);
 $current_y += 4;
 $pdf->SetXY($current_x, $current_y);
 $pdf->Cell($current_x, $current_y, "Gracias por elegirnos");
-$pdf->Output('D', 'Factura.pdf');
+
+
+$adjunto = $pdf->Output('', 'S'); 
 
 
 $a_multi_compra = json_decode(file_get_contents('json/id_compras.json'), true);
 $compradeldia = file_get_contents('json/comprasGenerales.json'); //carga archivo json
 $contenido_decodificado = json_decode($compradeldia, true);  //crea un array para php
-$a_multi_compras = array($a_multi_compra, 'total' =>$total); //agrega nueva info al array
+$a_multi_compras = array('Nombre' =>$nombrecomprador, 'Apellido' =>$apellidocomprador, 'Mail' =>$mailcomprador, 'total' =>$total, $a_multi_compra); //agrega nueva info al array
 $contenido_decodificado[date('YmdHisU')] = $a_multi_compras; //agrega contenido
 $js = json_encode($contenido_decodificado); //codifica nuevamente
 file_put_contents('json/comprasGenerales.json', $js); //agrega el contenido
@@ -89,3 +96,69 @@ foreach ($a_multi_productos as $a_producto) {
         file_put_contents("json/id_compras.json", json_encode($json, JSON_FORCE_OBJECT));
     }
 }
+
+
+
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+/*Lo primero es añadir al script la clase phpmailer desde la ubicación en que esté*/
+require ('PHPMailer-master\src\PHPMailer.php');
+require ('PHPMailer-master\src\Exception.php');
+require ('PHPMailer-master\src\SMTP.php');
+
+
+
+$mail = new PHPMailer();
+
+$mail->IsSMTP();   // set mailer to
+$mail->SMTPAuth = true;
+
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
+$mail->Host = 'smtp.gmail.com';  // specify main and backup server
+$mail->SMTPAuth = true;     // activa autenticacion SMTP
+$mail->Username = "elbardolibreria@gmail.com";  // usuario SMTP
+$mail->Password = "tpdavincilibreria"; // contraseña SMTP
+
+$mail->From = "elbardolibreria@gmail.com";
+$mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
+
+$mail->AddAddress("elbardolibreria@gmail.com");        // destinatario
+
+$mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']." ".$_REQUEST['Apellido']);    // responder a
+
+$mail->Port       = 587; //puerto de salida
+
+$mail->SMTPSecure = 'tls'; //Definmos la seguridad como TLS
+
+$mail->SMTPAuth   = true; //Tenemos que usar gmail autenticados, así que esto a TRUE
+
+$mail->WordWrap = 50;     // set word wrap to 50 characters
+$mail->IsHTML(true);     // set email
+
+$mail->Subject = "Factura de venta";
+$mail->Body    = $_REQUEST['mail'];
+$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+$mail->AddStringAttachment($adjunto, 'Factura.pdf', 'base64', 'application/pdf');
+
+
+
+if(!$mail->Send())
+{
+   echo "Message could not be sent. <p>";
+   echo "Mailer Error: " . $mail->ErrorInfo;
+   exit;
+}
+
+
+
+?> 
+
+
