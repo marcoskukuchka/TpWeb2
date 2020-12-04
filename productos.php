@@ -30,13 +30,17 @@ require_once("includes/head.php");
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="img/banner/bannerHarry.jpg" alt="Coleccion libros harry potter salamandra">
+                            <a href="detallesProducto.php?id=1"><img class="d-block img-fluid" src="img/banner/bannerHarry.jpg" alt="Coleccion libros harry potter salamandra">
+                            </a>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/banner/bannerSigloxxi.jpg" alt="editorial siglo veintiuno">
+                          <a href="detallesProducto.php?id=7"> <img class="d-block img-fluid" src="img/banner/bannersacheri.jpg" alt="editorial siglo veintiuno">
+                          </a>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/banner/alfaguaraBanner.jpg" alt="editorial Alfaguara">
+                            <a href="detallesProducto.php?id=10"><img class="d-block img-fluid" src="img/banner/alfaguaraBanner.jpg" alt="editorial Alfaguara">
+                            </a>
+                            
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
