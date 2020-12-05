@@ -58,7 +58,7 @@ require_once("includes/head.php");
                                         <h4 class="card-title">
                                         <a href="detallesProducto.php?id= <?php echo $id_prod;?>"><?php echo $nombre?></a>
                                         </h4>
-                                        <h5><?php echo $precio ?></h5>
+                                        <h5><?php echo "$". $precio ?></h5>
                                         <p class="card-text"><?php echo $descripcion ?></p>
                                     </div>
                                     <div class="card-footer">
