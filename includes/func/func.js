@@ -20,20 +20,33 @@
     }
     var asunto = document.getElementById('Asunto').value;
     if(asunto.length == 0) {
-      alert('Cual es tu duda o consulta?');
+      alert('Pone un titulo por favor');
       return;
     
     }
-      if (document.formcontacto.Area.selectedIndex==0){
-        alert("Selecciona un sector")
-        document.formcontacto.Area.focus()
-        return 0;
- 
 
-}this.submit();
-
+  var mensaje = document.getElementById('Mensaje').value;
+  if(mensaje.length == 0) {
+    alert('Cual es tu duda o consulta?');
+    return;
 
   }
+
+  var sector = document.getElementById('Area');
+
+  if(sector.value == 0|| sector.value== ""){
+      alert("Selecciona sector");
+      sector.focus();
+      return;
+
+    }
+
+
+    this.submit();
+}
+
+
+  
 
 
 //Ventana modal suscripcion newsletter
