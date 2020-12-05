@@ -89,7 +89,7 @@ require_once("includes/func/funciones.php");
                                                 <div class="col ml-3">
                                                     <form action="carrito.php" method="get">
                                                         <input type="hidden" disable="disable" class="form-control" name="quitar_producto" value=<?php echo $id_prod; ?> id="producto">
-                                                        <button type="submit" class="btn btn-warning mb-2 " type="button">
+                                                        <button type="submit" class="btn btn-danger mb-2 " type="button">
                                                            Eliminar 
                                                         </button>
                                                     </form>
@@ -136,7 +136,7 @@ require_once("includes/func/funciones.php");
                 <p class="text-right">Cantidad productos: <?php echo $cantidad_productos ?> <span id="total"></span></p>
 
                 <p class="text-right">Total: $<?php echo $total ?> <span id="total"></span></p>
-                <a class="mb-2 pt-5" href="metodopago.php?total=<?php echo $total ?>">Finalizar compra</a>
+                <a class="mb-2 pt-5 text-danger" href="metodopago.php?total=<?php echo $total ?>">Finalizar compra</a>
 
 
             </aside>

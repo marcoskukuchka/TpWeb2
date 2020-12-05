@@ -47,23 +47,24 @@
                         $checked = '';
                 $nombre_for = $nombre_for + 1;
                 ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div class="custom-control custom-checkbox">
-                            <?php
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="custom-control custom-checkbox">
+                        <?php
                             echo '<input type="checkbox" class="custom-control-input" id="' . $nombre_for . '" name="id_editorial[]" value = "' . $a_editorial['id_editorial'] . '" ' . $checked . '>';
 
                             echo '<label class="custom-control-label" for="' . $nombre_for . '">' . $a_editorial['nombre'] . '</label>';
                             ?>
-                        </div>
-                       
-                        <span class="badge badge-success badge-pill"><?php echo contarItems($a_multi_productos, 'id_editorial', $a_editorial['id_editorial']); ?></span>
-                    </li>
+                    </div>
+
+                    <span
+                        class="badge badge-success badge-pill"><?php echo contarItems($a_multi_productos, 'id_editorial', $a_editorial['id_editorial']); ?></span>
+                </li>
 
                 <?php
                 }
                 ?>
-                
-                
+
+
             </ul>
             <!-- Buscador Generos -->
             <ul class="list-group pt-5">
@@ -78,33 +79,35 @@
                     $nombre_for = $nombre_for + 10;
                     
                 ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div class="custom-control custom-checkbox">
-                            <?php
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="custom-control custom-checkbox">
+                        <?php
                             echo '<input type="checkbox" class="custom-control-input" id="' . $nombre_for . '" name="id_genero[]" value = "' . $a_genero['id_genero'] . '" ' . $checked . '>';
 
                             echo '<label class="custom-control-label" for="' . $nombre_for . '">' . $a_genero['nombre'] . '</label>';
                             ?>
-                        </div>
-                        <span class="badge badge-success badge-pill"><?php echo contarItems($a_multi_productos, 'id_genero', $a_genero['id_genero']); ?></span>
-                    </li>
+                    </div>
+                    <span
+                        class="badge badge-success badge-pill"><?php echo contarItems($a_multi_productos, 'id_genero', $a_genero['id_genero']); ?></span>
+                </li>
             </ul>
-        <?php
+            <?php
                 }
         ?>
 
 
-        <div class="container-fluid h-100">
-            <div class="row w-100 align-items-center">
-                <div class="col text-center">
-                    <input type="submit" value="Buscar" class="btn btn-success mt-2 pl-5 pr-5">
-                  
-                  <button class="btn btn-success mt-2 mb-5 pl-5 pr-5"><a href="productos.php" class="reseteo">Todos</a></button>
-   
-               
+            <div class="container-fluid h-100">
+                <div class="row w-100 align-items-center">
+                    <div class="col text-center">
+                        <input type="submit" value="Buscar" class="btn btn-success mt-2 pl-5 pr-5">
+
+                        <button class="btn btn-secondary mt-2 mb-5 pl-5 pr-5"><a href="productos.php"
+                                class="reseteo">Buscar Todo</a></button>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
 
         </form>
 
@@ -112,4 +115,3 @@
 
 
 </div>
-
