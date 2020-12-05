@@ -113,7 +113,7 @@ require_once("includes/func/funciones.php");
                             </h2>
                             <h3 class=" mb-2 pb-3">¿Todavía no encontraste nada que te guste?</h3>
                             <h3>Comunicate con nosotros y te asesoramos</h3>
-                            <h3><a href="contacto.php">Consultas</a></h3>
+                            <h3><a href="contacto.php">Consultanos</a></h3>
                         </div>
 
                     <?php

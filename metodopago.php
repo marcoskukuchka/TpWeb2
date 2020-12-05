@@ -31,23 +31,18 @@ $total = $_REQUEST['total'];
       <section>
             <div class=" col-lg-7 col-md-7 mx-auto mt-5 pb-5">
 
-
-
                   <h4 class="text-white">Completa tus datos</h4>
                   <form action="graciascompra.php" method="get">
 
-                        <input type="Nombre" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre" required>
-                        <input type="apellido" class="form-control" name="Apellido" id="apellido" placeholder="Apellido" required>
-                        <input type="email" class="form-control" name="mail" id="email" placeholder="Direccion de email (aca te va a llegar la factura)" required>
+                        <input type="Nombre" class="form-control  mb-1" name="Nombre" id="Nombre" placeholder="Nombre" required>
+                        <input type="apellido" class="form-control mb-1" name="Apellido" id="apellido" placeholder="Apellido" required>
+                        <input type="email" class="form-control mb-1" name="mail" id="email" placeholder="Direccion de email (aca te va a llegar la factura)" required>
                         <input type="hidden" class="form-control" name="total" value=<?php echo $total; ?> disable="disable">
                         <p class="text-white" name=<?php $total ?>><?php echo "Tu total es de $" .  $total ?></p>
 
 
-
-
                         <div class="mb-3">
                               <h3 class="text-white text-center">Elegi tu metodo de pago</h3>
-
 
                               <div class="d-flex">
                                     <div class="pr-3">
