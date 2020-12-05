@@ -122,11 +122,12 @@ $mail->Username = "elbardolibreria@gmail.com";  // usuario SMTP
 $mail->Password = "tpdavincilibreria"; // contraseña SMTP
 
 $mail->From = "elbardolibreria@gmail.com";
-$mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
+$mail->FromName = "El Bardo Inmortal Librerias";        // remitente
+//$mail->FromName = $_REQUEST['Nombre']." ".$_REQUEST['Apellido'];        // remitente
 
-$mail->AddAddress("elbardolibreria@gmail.com");        // destinatario
-
-$mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']." ".$_REQUEST['Apellido']);    // responder a
+$mail->AddAddress($_REQUEST['mail']);        // destinatario
+//$mail->AddAddress("elbardolibreria@gmail.com");        // destinatario
+//$mail->AddReplyTo($_REQUEST['mail'], $_REQUEST['Nombre']." ".$_REQUEST['Apellido']);    // responder a
 
 $mail->Port       = 587; //puerto de salida
 
