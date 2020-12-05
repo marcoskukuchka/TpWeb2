@@ -34,7 +34,7 @@ require_once("includes/func/funciones.php");
                         unset($json[$usuarioJson]);
                     }
                 }
-                file_put_contents("json/id_compras.json", json_encode($json, JSON_FORCE_OBJECT));
+                file_put_contents("json/id_compras.json", json_encode($json));
             } ?>
 
 
@@ -77,7 +77,7 @@ require_once("includes/func/funciones.php");
                                             <h4 class="card-title">
                                                 <a href="detallesProducto.php?id=<?php echo $id_prod ?>"><?php echo $nombre ?></a>
                                             </h4>
-                                            <h5><?php echo $precio; ?></h5>
+                                            <h5><?php echo "$". $precio; ?></h5>
                                             <p class="card-text"><?php echo $descripcion ?></p>
                                         </div>
                                         <div class="card-footer">
@@ -90,7 +90,7 @@ require_once("includes/func/funciones.php");
                                                     <form action="carrito.php" method="get">
                                                         <input type="hidden" disable="disable" class="form-control" name="quitar_producto" value=<?php echo $id_prod; ?> id="producto">
                                                         <button type="submit" class="btn btn-warning mb-2 " type="button">
-                                                            Eliminar
+                                                           Eliminar 
                                                         </button>
                                                     </form>
                                                 </div>
