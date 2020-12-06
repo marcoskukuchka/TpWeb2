@@ -13,7 +13,7 @@ $descripcion = $a_producto['descripcion_larga'];
 $pdf = new FPDF(); 
 $pdf->AddPage(); 
 $pdf->SetFont('Arial','',15); 
-$pdf->Cell(3,140,$nombre);
+$pdf->Cell(3,140,utf8_decode($nombre));
 $pdf->SetFont('Arial','',12); 
 $pdf->Cell(1,155,"$".$precio);
 $pdf->Image('img\logoCabeza.png',3,6);
