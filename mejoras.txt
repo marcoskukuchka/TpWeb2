@@ -6,6 +6,7 @@ Se realizaron las siguientes mejoras:
 - Validacion de campos de formulario de contacto con JS
 - Carrito de compras  
 - Pantalla de pago y envio de factura pdf por mail (Compras)
+- Se agregó un botón "Buscar todos" para "resetear" la búsqueda de libros (Aside)
 
 El sitio ya contaba con:
 - Un formulario de suscripción a una lista de correo, que agregue la dirección de correo del usuario a un archivo jSon llamado “correos” (nuestro archivo se llama email.json).
